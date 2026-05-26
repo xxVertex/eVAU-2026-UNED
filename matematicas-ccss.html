@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matemáticas CCSS — EvAU 2026</title>
+<link rel="stylesheet" href="style.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea']}};</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+</head>
+<body data-subject="matcc">
+
+<header class="topbar">
+  <div class="topbar-logo">e<span>V</span>AU <span>2026</span></div>
+  <nav class="topbar-nav">
+    <a href="index.html">Inicio</a>
+    <a href="fisica.html" class="fisica">Física</a>
+    <a href="matematicas-ii.html" class="mat2">Matemáticas II</a>
+    <a href="matematicas-ccss.html" class="matcc active">Matemáticas CCSS</a>
+  </nav>
+  <span class="topbar-tag">Mat CCSS</span>
+</header>
+
+<div class="page-layout">
+
+<nav class="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Prog. Lineal</div>
+    <a href="#proglineal" class="sb-link">Conceptos y método</a>
+    <a href="#region" class="sb-link">Región factible</a>
+    <a href="#optimizacion" class="sb-link">Optimización</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Probabilidad</div>
+    <a href="#prob-basica" class="sb-link">Probabilidad básica</a>
+    <a href="#prob-condicionada" class="sb-link">Probabilidad condicionada</a>
+    <a href="#bayes" class="sb-link">Teorema de Bayes</a>
+    <a href="#combinatoria" class="sb-link">Combinatoria</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Estadística</div>
+    <a href="#estadistica-desc" class="sb-link">Estadística descriptiva</a>
+    <a href="#binomial" class="sb-link">Distribución binomial</a>
+    <a href="#normal" class="sb-link">Distribución normal</a>
+  </div>
+</nav>
+
+<main class="page-main">
+
+  <div class="page-hero">
+    <div class="kicker">EvAU 2026 · Apuntes completos</div>
+    <h1>Matemáticas CCSS</h1>
+    <p class="desc">Programación lineal, probabilidad y estadística. Todos los conceptos y fórmulas del temario de Ciencias Sociales.</p>
+    <div class="hero-tags">
+      <span class="htag">Prog. lineal</span>
+      <span class="htag">Probabilidad</span>
+      <span class="htag">Bayes</span>
+      <span class="htag">Binomial</span>
+      <span class="htag">Normal</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 1 — PROGRAMACIÓN LINEAL
+  ══════════════════════════════════════════ -->
+  <section class="block" id="proglineal">
+    <div class="block-header">
+      <span class="block-label">Bloque 1</span>
+      <h2>Programación Lineal</h2>
+    </div>
+
+    <p>La programación lineal resuelve problemas de <strong>optimización</strong> (maximizar beneficio o minimizar coste) sujetos a un conjunto de <strong>restricciones</strong> lineales.</p>
+
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Función objetivo</div>
+        \[ z = ax + by \]
+        <div class="f-note">Se quiere maximizar o minimizar z sujeto a las restricciones.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Sistema de restricciones</div>
+        \[ \begin{cases} a_1x + b_1y \leq c_1 \\ a_2x + b_2y \leq c_2 \\ \vdots \\ x \geq 0,\; y \geq 0 \end{cases} \]
+      </div>
+    </div>
+
+    <h3 class="sh" id="region">Región factible</h3>
+    <p>La región factible es el conjunto de puntos (x, y) que satisfacen <em>simultáneamente</em> todas las restricciones. Es la <strong>intersección de semiplanos</strong>.</p>
+
+    <div class="ib key">
+      <strong>Pasos para representar la región factible:</strong>
+      <p>1. Trazar la recta frontera de cada restricción (igualdad).</p>
+      <p>2. Para cada restricción, determinar qué semiplano es el válido (sustituir un punto de prueba, p.ej. el origen).</p>
+      <p>3. La región factible es la zona común a todos los semiplanos. Puede ser acotada (polígono) o no acotada.</p>
+    </div>
+
+    <h3 class="sh" id="optimizacion">Optimización — Teorema fundamental</h3>
+
+    <div class="ib warn">
+      <strong>Teorema fundamental de la programación lineal:</strong> Si la región factible es no vacía y acotada, la función objetivo <em>siempre</em> alcanza su máximo y su mínimo en algún <strong>vértice</strong> (punto extremo) de la región factible.
+    </div>
+
+    <h4 class="subsh">Método paso a paso</h4>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Paso</th><th>Qué hacer</th></tr>
+        <tr><td><strong>1. Definir variables</strong></td><td>Identificar las incógnitas x, y (generalmente cantidades producidas, compradas, etc.) con x ≥ 0, y ≥ 0.</td></tr>
+        <tr><td><strong>2. Escribir restricciones</strong></td><td>Traducir cada condición del problema a una inecuación lineal.</td></tr>
+        <tr><td><strong>3. Función objetivo</strong></td><td>Expresar lo que se quiere maximizar/minimizar como z = ax + by.</td></tr>
+        <tr><td><strong>4. Representar gráficamente</strong></td><td>Trazar las rectas frontera, sombrear la región factible.</td></tr>
+        <tr><td><strong>5. Hallar los vértices</strong></td><td>Resolver los sistemas de 2 ecuaciones de las rectas que se cortan en cada vértice.</td></tr>
+        <tr><td><strong>6. Evaluar z en los vértices</strong></td><td>Calcular z en cada vértice y elegir el mayor (máximo) o menor (mínimo).</td></tr>
+      </table>
+    </div>
+
+    <div class="ib tip">
+      <strong>Si la región no es acotada:</strong> puede que el máximo (o mínimo) no exista. Comprobarlo evaluando la tendencia de z cuando x o y → ∞.
+    </div>
+
+    <h4 class="subsh">Ejemplo tipo</h4>
+    <div class="ib key">
+      <strong>Restricciones:</strong> \(2x+y\leq 10\), \(x+3y\leq 12\), \(x\geq0\), \(y\geq0\).<br>
+      <strong>Función objetivo:</strong> Maximizar \(z = 5x + 4y\).<br>
+      <strong>Vértices de la región:</strong> (0,0), (5,0), (3,4), (0,4). Evaluar z en cada uno y elegir el mayor.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 2 — PROBABILIDAD BÁSICA
+  ══════════════════════════════════════════ -->
+  <section class="block" id="prob-basica">
+    <div class="block-header">
+      <span class="block-label">Bloque 2</span>
+      <h2>Probabilidad</h2>
+    </div>
+
+    <h3 class="sh">Axiomas y reglas básicas</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Regla de Laplace (espacio equiprobable)</div>
+        \[ P(A) = \frac{\text{casos favorables}}{\text{casos posibles}} \]
+        <div class="f-note">0 ≤ P(A) ≤ 1 siempre. P(Ω) = 1.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Evento complementario</div>
+        \[ P(\bar{A}) = 1 - P(A) \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Probabilidad de la unión (A o B)</div>
+        \[ P(A\cup B) = P(A)+P(B)-P(A\cap B) \]
+        <div class="f-note">Si A y B son mutuamente excluyentes: P(A∩B)=0.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Eventos mutuamente excluyentes</div>
+        \[ A\cap B = \emptyset \Rightarrow P(A\cup B) = P(A)+P(B) \]
+      </div>
+    </div>
+
+    <h3 class="sh" id="prob-condicionada">Probabilidad condicionada e independencia</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Probabilidad condicionada P(A|B)</div>
+        \[ P(A\mid B) = \frac{P(A\cap B)}{P(B)}, \quad P(B)>0 \]
+        <div class="f-note">Probabilidad de A sabiendo que B ha ocurrido.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Probabilidad de la intersección</div>
+        \[ P(A\cap B) = P(A)\cdot P(B\mid A) = P(B)\cdot P(A\mid B) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Eventos independientes</div>
+        \[ A\perp B \Leftrightarrow P(A\cap B) = P(A)\cdot P(B) \]
+        <div class="f-note">Equivalentemente: P(A|B) = P(A) (B no aporta info sobre A).</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Probabilidad total</h3>
+    <div class="f-full hi">
+      <div class="f-label">Teorema de la probabilidad total</div>
+      \[ P(B) = \sum_{i=1}^{n} P(B\mid A_i)\cdot P(A_i) \]
+      <div class="f-note">Los eventos A₁, A₂, …, Aₙ forman una partición del espacio muestral: son mutuamente excluyentes y su unión es Ω.</div>
+    </div>
+
+    <h3 class="sh" id="bayes">Teorema de Bayes</h3>
+    <div class="f-full hi">
+      <div class="f-label">Teorema de Bayes — probabilidad a posteriori</div>
+      \[ P(A_i\mid B) = \frac{P(B\mid A_i)\cdot P(A_i)}{\displaystyle\sum_{j=1}^{n} P(B\mid A_j)\cdot P(A_j)} \]
+      <div class="f-note">Permite calcular la probabilidad de la causa Aᵢ dado que se ha observado el efecto B.</div>
+    </div>
+
+    <div class="ib key">
+      <strong>Para resolver Bayes paso a paso:</strong>
+      <p>1. Identificar las hipótesis A₁, …, Aₙ (causas) y sus probabilidades previas P(Aᵢ).</p>
+      <p>2. Identificar el evento observado B (efecto) y calcular P(B|Aᵢ) para cada hipótesis.</p>
+      <p>3. Calcular P(B) con el teorema de la probabilidad total.</p>
+      <p>4. Aplicar la fórmula de Bayes: P(Aᵢ|B) = P(B|Aᵢ)·P(Aᵢ) / P(B).</p>
+    </div>
+
+    <div class="ib tip">
+      <strong>Herramientas gráficas:</strong>
+      <p>· <strong>Diagrama de árbol:</strong> ideal para probabilidades condicionadas encadenadas. Multiplicar por las ramas hacia adelante.</p>
+      <p>· <strong>Tablas de contingencia:</strong> útiles cuando los datos se presentan como frecuencias absolutas o relativas.</p>
+    </div>
+
+    <h3 class="sh" id="combinatoria">Combinatoria</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Número combinatorio (combinaciones sin repetición)</div>
+        \[ \binom{n}{k} = C_n^k = \frac{n!}{k!(n-k)!} \]
+        <div class="f-note">Número de formas de elegir k elementos de n sin importar el orden.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Permutaciones sin repetición</div>
+        \[ P_n = n! \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Variaciones sin repetición</div>
+        \[ V_n^k = \frac{n!}{(n-k)!} \]
+        <div class="f-note">Igual que combinaciones pero el orden importa.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Variaciones con repetición</div>
+        \[ VR_n^k = n^k \]
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 3 — ESTADÍSTICA DESCRIPTIVA
+  ══════════════════════════════════════════ -->
+  <section class="block" id="estadistica-desc">
+    <div class="block-header">
+      <span class="block-label">Bloque 3</span>
+      <h2>Estadística Descriptiva</h2>
+    </div>
+
+    <h3 class="sh">Medidas de posición central</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Media aritmética</div>
+        \[ \bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} = \frac{\sum x_i f_i}{\sum f_i} \]
+        <div class="f-note">Sensible a valores atípicos (outliers).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Mediana Me</div>
+        \[ \text{Valor central cuando los datos están ordenados} \]
+        <div class="f-note">Si n par: media de los dos centrales. Más robusta que la media.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Moda Mo</div>
+        \[ \text{Valor que aparece con mayor frecuencia} \]
+        <div class="f-note">Puede haber varias modas (bimodal, multimodal) o ninguna.</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Medidas de dispersión</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Varianza σ²</div>
+        \[ \sigma^2 = \frac{\sum (x_i-\bar{x})^2}{n} = \frac{\sum x_i^2}{n} - \bar{x}^2 \]
+        <div class="f-note">La segunda forma (de König) es más práctica para calcular.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Desviación típica σ</div>
+        \[ \sigma = \sqrt{\sigma^2} \]
+        <div class="f-note">Mismas unidades que los datos. Cuanto mayor, más dispersión.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Coeficiente de variación CV</div>
+        \[ CV = \frac{\sigma}{\bar{x}} \]
+        <div class="f-note">Dispersión relativa. Permite comparar conjuntos con distintas unidades o medias.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Rango o recorrido</div>
+        \[ R = x_{max} - x_{min} \]
+        <div class="f-note">Muy simple pero muy sensible a outliers.</div>
+      </div>
+    </div>
+
+    <div class="ib tip">
+      <strong>Con datos agrupados en tabla de frecuencias:</strong><br>
+      \(\bar{x} = \dfrac{\sum x_i f_i}{n}\) y \(\sigma^2 = \dfrac{\sum x_i^2 f_i}{n} - \bar{x}^2\), donde f_i son las frecuencias absolutas y n = Σf_i.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 4 — DISTRIBUCIÓN BINOMIAL
+  ══════════════════════════════════════════ -->
+  <section class="block" id="binomial">
+    <div class="block-header">
+      <span class="block-label">Bloque 4</span>
+      <h2>Distribución Binomial</h2>
+    </div>
+
+    <div class="ib key">
+      <strong>Cuándo usar la binomial B(n, p):</strong>
+      <p>· Se repite un experimento <strong>n veces</strong> de forma independiente.</p>
+      <p>· Cada ensayo tiene solo dos resultados: <strong>éxito</strong> (probabilidad p) o <strong>fracaso</strong> (probabilidad 1–p = q).</p>
+      <p>· Se cuenta el número de éxitos X.</p>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Probabilidad de exactamente k éxitos</div>
+        \[ P(X=k) = \binom{n}{k} p^k (1-p)^{n-k} \]
+        <div class="f-note">k = 0, 1, 2, …, n.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Media (valor esperado)</div>
+        \[ \mu = E[X] = np \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Varianza</div>
+        \[ \sigma^2 = np(1-p) = npq \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Desviación típica</div>
+        \[ \sigma = \sqrt{np(1-p)} \]
+      </div>
+    </div>
+
+    <h3 class="sh">Cálculo de probabilidades acumuladas</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Evento</th><th>Cálculo</th></tr>
+        <tr><td>\(P(X \leq k)\)</td><td>Sumar \(P(X=0)+P(X=1)+\cdots+P(X=k)\)</td></tr>
+        <tr><td>\(P(X \geq k)\)</td><td>\(1 - P(X \leq k-1)\)</td></tr>
+        <tr><td>\(P(X > k)\)</td><td>\(1 - P(X \leq k)\)</td></tr>
+        <tr><td>\(P(a \leq X \leq b)\)</td><td>\(P(X \leq b) - P(X \leq a-1)\)</td></tr>
+      </table>
+    </div>
+
+    <div class="ib warn">
+      <strong>Aproximación por la normal:</strong> Cuando n es grande (n ≥ 30) y p no está cerca de 0 ni de 1 (np ≥ 5 y nq ≥ 5), se puede aproximar B(n,p) ≈ N(np, √(npq)).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 5 — DISTRIBUCIÓN NORMAL
+  ══════════════════════════════════════════ -->
+  <section class="block" id="normal">
+    <div class="block-header">
+      <span class="block-label">Bloque 5</span>
+      <h2>Distribución Normal</h2>
+    </div>
+
+    <p>La distribución normal \(N(\mu, \sigma)\) es una distribución continua en forma de <strong>campana de Gauss</strong>, simétrica respecto a su media μ.</p>
+
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Función de densidad</div>
+        \[ f(x) = \frac{1}{\sigma\sqrt{2\pi}}\,e^{-\frac{(x-\mu)^2}{2\sigma^2}} \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Parámetros</div>
+        \[ \mu = \text{media} \quad \sigma = \text{desviación típica} \]
+        <div class="f-note">La curva es simétrica respecto a x = μ.</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Tipificación — Normal estándar Z</h3>
+    <div class="f-full hi">
+      <div class="f-label">Tipificación o estandarización</div>
+      \[ Z = \frac{X - \mu}{\sigma} \sim N(0, 1) \]
+      <div class="f-note">Transforma cualquier N(μ,σ) en la normal estándar N(0,1), cuya tabla sí está disponible.</div>
+    </div>
+
+    <h3 class="sh">Propiedades y regla empírica (68-95-99.7)</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Intervalo</th><th>Probabilidad aproximada</th></tr>
+        <tr><td>\((\mu-\sigma,\; \mu+\sigma)\)</td><td>≈ 68.27%</td></tr>
+        <tr><td>\((\mu-2\sigma,\; \mu+2\sigma)\)</td><td>≈ 95.45%</td></tr>
+        <tr><td>\((\mu-3\sigma,\; \mu+3\sigma)\)</td><td>≈ 99.73%</td></tr>
+      </table>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Simetría de la normal estándar</div>
+        \[ P(Z \leq -a) = 1 - P(Z \leq a) \]
+        <div class="f-note">La tabla solo da valores para z ≥ 0; los negativos se obtienen con esta regla.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Probabilidad en un intervalo</div>
+        \[ P(a \leq X \leq b) = P\!\left(\frac{a-\mu}{\sigma}\leq Z\leq\frac{b-\mu}{\sigma}\right) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">P(Z ≥ a)</div>
+        \[ P(Z \geq a) = 1 - P(Z \leq a) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">P(–a ≤ Z ≤ a) simétrico</div>
+        \[ P(-a \leq Z \leq a) = 2P(Z \leq a) - 1 \]
+      </div>
+    </div>
+
+    <h3 class="sh">Procedimiento para resolver problemas con la normal</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Paso</th><th>Qué hacer</th></tr>
+        <tr><td><strong>1.</strong></td><td>Identificar μ y σ (o σ²) de la variable X ~ N(μ, σ).</td></tr>
+        <tr><td><strong>2.</strong></td><td>Tipificar: convertir los límites del intervalo a valores Z = (x–μ)/σ.</td></tr>
+        <tr><td><strong>3.</strong></td><td>Consultar la tabla de la normal estándar N(0,1) para obtener Φ(z) = P(Z ≤ z).</td></tr>
+        <tr><td><strong>4.</strong></td><td>Usar las propiedades de simetría para valores negativos o intervalos.</td></tr>
+      </table>
+    </div>
+
+    <div class="ib tip">
+      <strong>Problema inverso:</strong> Si te dan una probabilidad y piden encontrar el valor x, localizar en la tabla el valor z correspondiente a esa probabilidad y despejar: x = μ + zσ.
+    </div>
+
+    <h3 class="sh">Resumen — Relación entre distribuciones</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Distribución</th><th>Parámetros</th><th>Uso típico</th><th>Media</th><th>Varianza</th></tr>
+        <tr>
+          <td><strong>Binomial</strong> B(n,p)</td>
+          <td>n (ensayos), p (prob. éxito)</td>
+          <td>Contar éxitos en n ensayos dicotómicos independientes</td>
+          <td>np</td>
+          <td>np(1–p)</td>
+        </tr>
+        <tr>
+          <td><strong>Normal</strong> N(μ,σ)</td>
+          <td>μ (media), σ (desv. típica)</td>
+          <td>Modelar fenómenos naturales continuos; aproximar la binomial</td>
+          <td>μ</td>
+          <td>σ²</td>
+        </tr>
+        <tr>
+          <td><strong>Normal estándar</strong> N(0,1)</td>
+          <td>—</td>
+          <td>Consulta de tablas; resultado de tipificar cualquier normal</td>
+          <td>0</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="ib warn">
+      <strong>⚠ Errores frecuentes:</strong>
+      <p>· Confundir σ (desviación típica) con σ² (varianza). La tabla usa Z = (X–μ)/σ, con σ, no σ².</p>
+      <p>· Olvidar que la probabilidad P(X = a) = 0 en distribuciones continuas: siempre calcular intervalos.</p>
+      <p>· En la binomial, P(X ≥ 1) = 1 – P(X = 0), nunca calcular sumando todos los términos hasta n.</p>
+    </div>
+  </section>
+
+  <div class="page-footer">
+    MATEMÁTICAS CCSS · EVAU 2026 · <a href="index.html" style="color:var(--muted)">← Volver al inicio</a>
+  </div>
+
+</main>
+</div>
+
+<script>
+const sections = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.sb-link');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.sb-link[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { rootMargin: `-${56+16}px 0px -60% 0px`, threshold: 0 });
+sections.forEach(s => obs.observe(s));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Física — EvAU 2026</title>
+<link rel="stylesheet" href="style.css">
+<script>window.MathJax={tex:{inlineMath:[['\\(','\\)']],displayMath:[['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea']}};</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js"></script>
+</head>
+<body data-subject="fisica">
+
+<!-- TOPBAR -->
+<header class="topbar">
+  <div class="topbar-logo">e<span>V</span>AU <span>2026</span></div>
+  <nav class="topbar-nav">
+    <a href="index.html">Inicio</a>
+    <a href="fisica.html" class="fisica active">Física</a>
+    <a href="matematicas-ii.html" class="mat2">Matemáticas II</a>
+    <a href="matematicas-ccss.html" class="matcc">Matemáticas CCSS</a>
+  </nav>
+  <span class="topbar-tag">Física</span>
+</header>
+
+<div class="page-layout">
+
+<!-- SIDEBAR -->
+<nav class="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Gravitación</div>
+    <a href="#grav" class="sb-link">Ley de Gravitación</a>
+    <a href="#kepler" class="sb-link">Leyes de Kepler</a>
+    <a href="#campo-g" class="sb-link">Campo gravitatorio</a>
+    <a href="#energia-g" class="sb-link">Energía y satélites</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Campo Eléctrico</div>
+    <a href="#coulomb" class="sb-link">Ley de Coulomb</a>
+    <a href="#campo-e" class="sb-link">Campo y potencial</a>
+    <a href="#condensadores" class="sb-link">Condensadores</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Campo Magnético</div>
+    <a href="#mag" class="sb-link">Fuerza de Lorentz</a>
+    <a href="#fuentes-b" class="sb-link">Fuentes de B</a>
+    <a href="#induccion" class="sb-link">Inducción EM</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Ondas</div>
+    <a href="#mas" class="sb-link">MAS – Oscilaciones</a>
+    <a href="#ondas" class="sb-link">Ondas mecánicas</a>
+    <a href="#sonido" class="sb-link">Sonido y Doppler</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Óptica</div>
+    <a href="#optica-geo" class="sb-link">Óptica geométrica</a>
+    <a href="#optica-fis" class="sb-link">Óptica física</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Física Moderna</div>
+    <a href="#relatividad" class="sb-link">Relatividad especial</a>
+    <a href="#cuantica" class="sb-link">Física cuántica</a>
+    <a href="#atomico" class="sb-link">Modelos atómicos</a>
+    <a href="#nuclear" class="sb-link">Física nuclear</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main class="page-main">
+
+  <div class="page-hero">
+    <div class="kicker">EvAU 2026 · Apuntes completos</div>
+    <h1>Física</h1>
+    <p class="desc">Todos los bloques del temario: fórmulas, conceptos clave, relaciones y errores frecuentes.</p>
+    <div class="hero-tags">
+      <span class="htag">11 bloques</span>
+      <span class="htag">Gravitación</span>
+      <span class="htag">EM</span>
+      <span class="htag">Ondas</span>
+      <span class="htag">Óptica</span>
+      <span class="htag">Física Moderna</span>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 1 — GRAVITACIÓN
+  ══════════════════════════════════════════ -->
+  <section class="block" id="grav">
+    <div class="block-header">
+      <span class="block-label">Bloque 1</span>
+      <h2>Gravitación</h2>
+    </div>
+
+    <!-- Constantes -->
+    <div class="const-grid">
+      <div class="const-item"><span class="csym">G</span><span class="cval">6.674 × 10⁻¹¹ N·m²/kg²</span></div>
+      <div class="const-item"><span class="csym">M<sub>T</sub></span><span class="cval">5.97 × 10²⁴ kg</span></div>
+      <div class="const-item"><span class="csym">R<sub>T</sub></span><span class="cval">6.37 × 10⁶ m</span></div>
+      <div class="const-item"><span class="csym">g</span><span class="cval">9.8 m/s² (superficie)</span></div>
+    </div>
+
+    <h3 class="sh">Ley de Gravitación Universal</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Fuerza gravitatoria</div>
+        \[ F = G\frac{m_1 m_2}{r^2} \]
+        <div class="f-note">r = distancia entre centros de masa. Siempre atractiva.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Forma vectorial</div>
+        \[ \vec{F}_{12} = -G\frac{m_1 m_2}{r^2}\hat{r}_{12} \]
+        <div class="f-note">El signo (–) indica atracción hacia la fuente.</div>
+      </div>
+    </div>
+
+    <h3 class="sh" id="kepler">Leyes de Kepler</h3>
+    <div class="law-box">
+      <div class="law-num">1ª Ley — Ley de las órbitas</div>
+      <div class="law-title">Los planetas describen órbitas elípticas con el Sol en un foco.</div>
+      <p>En el caso de órbitas circulares (aproximación frecuente en EvAU), el Sol ocupa el centro.</p>
+    </div>
+    <div class="law-box">
+      <div class="law-num">2ª Ley — Ley de las áreas</div>
+      <div class="law-title">El radio vector barre áreas iguales en tiempos iguales.</div>
+      <p>Consecuencia directa de la conservación del momento angular. El planeta va más rápido en el perihelio (más cercano) y más lento en el afelio.</p>
+    </div>
+    <div class="law-box">
+      <div class="law-num">3ª Ley — Ley de los períodos</div>
+      <div class="law-title">T² es proporcional a r³ (semieje mayor).</div>
+      <div class="f-grid" style="margin-top:12px">
+        <div class="f-box hi">
+          \[ \frac{T^2}{r^3} = \frac{4\pi^2}{GM} = \text{cte} \]
+          <div class="f-note">M = masa del cuerpo central (ej. Sol o Tierra).</div>
+        </div>
+        <div class="f-box">
+          <div class="f-label">Forma comparativa (sin G)</div>
+          \[ \frac{T_1^2}{T_2^2} = \frac{r_1^3}{r_2^3} \]
+        </div>
+      </div>
+    </div>
+
+    <h3 class="sh" id="campo-g">Campo gravitatorio</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Intensidad del campo \(\vec{g}\)</div>
+        \[ \vec{g} = -\frac{GM}{r^2}\hat{r} \]
+        <div class="f-note">Unidades: N/kg = m/s². Varía con r².</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">En superficie (r = R)</div>
+        \[ g = \frac{GM}{R^2} \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Potencial gravitatorio V</div>
+        \[ V = -\frac{GM}{r} \]
+        <div class="f-note">Siempre negativo. V→0 cuando r→∞.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Relación g — V</div>
+        \[ g = -\frac{dV}{dr} \]
+        <div class="f-note">El campo apunta hacia V decreciente.</div>
+      </div>
+    </div>
+
+    <div class="ib key">
+      <strong>Superficies equipotenciales:</strong> son esferas concéntricas. El trabajo para moverse sobre una equipotencial es nulo. Las líneas de campo son siempre perpendiculares a las equipotenciales.
+    </div>
+
+    <h3 class="sh" id="energia-g">Energía gravitatoria y satélites</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Energía potencial gravitatoria</div>
+        \[ E_p = -\frac{GMm}{r} \]
+        <div class="f-note">Ref. en r=∞. Siempre negativa (interacción ligada).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Energía cinética orbital</div>
+        \[ E_c = \frac{GMm}{2r} \]
+        <div class="f-note">De igualar F_grav = F_centrípeta.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Energía mecánica total</div>
+        \[ E = -\frac{GMm}{2r} \]
+        <div class="f-note">E &lt; 0 → órbita ligada. |E_p| = 2E_c (Teorema Virial).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Velocidad orbital circular</div>
+        \[ v_{orb} = \sqrt{\frac{GM}{r}} \]
+        <div class="f-note">Mayor radio → menor velocidad.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Velocidad de escape</div>
+        \[ v_e = \sqrt{\frac{2GM}{r}} = \sqrt{2}\,v_{orb} \]
+        <div class="f-note">Para que E_total = 0 (escapar al infinito).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Trabajo del campo gravitatorio</div>
+        \[ W = GMm\!\left(\frac{1}{r_f}-\frac{1}{r_i}\right) \]
+      </div>
+    </div>
+
+    <div class="ib warn">
+      <strong>⚠ Error frecuente:</strong> Confundir <em>r</em> (distancia al centro) con <em>h</em> (altitud). Usar siempre <strong>r = R<sub>T</sub> + h</strong>. El potencial es escalar: varias masas → suma algebraica directa.
+    </div>
+
+    <h4 class="subsh">Satélites geoestacionarios</h4>
+    <p>Condiciones: órbita circular ecuatorial, T = 24 h, permanecen fijos sobre el mismo punto de la Tierra.</p>
+    <div class="f-box hi" style="max-width:360px">
+      <div class="f-label">Radio de la órbita geoestacionaria</div>
+      \[ r_{geo} = \left(\frac{GM_T T^2}{4\pi^2}\right)^{1/3} \approx 42\,200\text{ km} \]
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 2 — CAMPO ELÉCTRICO
+  ══════════════════════════════════════════ -->
+  <section class="block" id="coulomb">
+    <div class="block-header">
+      <span class="block-label">Bloque 2</span>
+      <h2>Campo Eléctrico</h2>
+    </div>
+
+    <div class="const-grid">
+      <div class="const-item"><span class="csym">k</span><span class="cval">8.99 × 10⁹ N·m²/C²</span></div>
+      <div class="const-item"><span class="csym">ε₀</span><span class="cval">8.85 × 10⁻¹² C²/(N·m²)</span></div>
+      <div class="const-item"><span class="csym">e</span><span class="cval">1.6 × 10⁻¹⁹ C</span></div>
+      <div class="const-item"><span class="csym">m<sub>e</sub></span><span class="cval">9.11 × 10⁻³¹ kg</span></div>
+    </div>
+
+    <h3 class="sh">Ley de Coulomb</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Fuerza eléctrica</div>
+        \[ F = k\frac{q_1 q_2}{r^2} \]
+        <div class="f-note">F>0 → repulsiva. F&lt;0 → atractiva. k = 1/(4πε₀).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Misma forma que la gravedad</div>
+        \[ F_E \sim \frac{kq_1q_2}{r^2} \quad F_G \sim \frac{Gm_1m_2}{r^2} \]
+        <div class="f-note">Diferencia: la eléctrica puede ser repulsiva; k≫G.</div>
+      </div>
+    </div>
+
+    <h3 class="sh" id="campo-e">Campo eléctrico y potencial</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Campo de una carga puntual</div>
+        \[ E = k\frac{|q|}{r^2} \]
+        <div class="f-note">Sale de cargas + y entra en cargas –.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Fuerza sobre carga de prueba</div>
+        \[ \vec{F} = q\vec{E} \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Superposición (varias cargas)</div>
+        \[ \vec{E}_{total} = \sum_i \vec{E}_i \]
+        <div class="f-note">Suma vectorial. ¡No olvidar los signos de las cargas!</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Potencial eléctrico V</div>
+        \[ V = k\frac{q}{r} \]
+        <div class="f-note">Escalar. V>0 si q>0. Superposición → suma algebraica.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Relación E — V</div>
+        \[ E = -\frac{dV}{dr} \]
+        <div class="f-note">El campo apunta en la dirección de V decreciente.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Energía potencial eléctrica</div>
+        \[ E_p = qV = k\frac{q_1 q_2}{r} \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Trabajo del campo eléctrico</div>
+        \[ W_{A\to B} = q(V_A - V_B) \]
+        <div class="f-note">W>0 si carga positiva va de mayor a menor V.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Diferencia de potencial</div>
+        \[ \Delta V = V_B - V_A = -\frac{W_{A\to B}}{q} \]
+      </div>
+    </div>
+
+    <h3 class="sh" id="condensadores">Condensadores</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Capacidad C</div>
+        \[ C = \frac{Q}{V} \]
+        <div class="f-note">Unidad: Faradio (F). Típico: µF, nF, pF.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Condensador plano</div>
+        \[ C = \varepsilon_0\frac{S}{d} \]
+        <div class="f-note">S = área de las placas, d = separación.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Con dieléctrico (ε_r)</div>
+        \[ C = \varepsilon_r\varepsilon_0\frac{S}{d} \]
+        <div class="f-note">ε_r ≥ 1 siempre aumenta la capacidad.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Campo entre placas</div>
+        \[ E = \frac{V}{d} \]
+        <div class="f-note">Campo uniforme entre placas planas.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Energía almacenada</div>
+        \[ U = \frac{Q^2}{2C} = \frac{CV^2}{2} = \frac{QV}{2} \]
+      </div>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Asociación</th><th>Capacidad equivalente</th><th>Carga Q</th><th>Tensión V</th></tr>
+        <tr>
+          <td><strong>Serie</strong></td>
+          <td>\(\dfrac{1}{C_{eq}}=\dfrac{1}{C_1}+\dfrac{1}{C_2}+\cdots\)</td>
+          <td>Igual en todos</td>
+          <td>Se reparte: \(V = V_1 + V_2 + \cdots\)</td>
+        </tr>
+        <tr>
+          <td><strong>Paralelo</strong></td>
+          <td>\(C_{eq} = C_1 + C_2 + \cdots\)</td>
+          <td>Se reparte: \(Q_i = C_i V\)</td>
+          <td>Igual en todos</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="ib key">
+      <strong>Analogía gravedad–electricidad:</strong> g ↔ E, V_grav ↔ V_elec, masa m ↔ carga q, G ↔ k. La diferencia fundamental es que la carga puede ser positiva o negativa (y por tanto la fuerza puede ser repulsiva), mientras que la masa siempre es positiva.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 3 — CAMPO MAGNÉTICO
+  ══════════════════════════════════════════ -->
+  <section class="block" id="mag">
+    <div class="block-header">
+      <span class="block-label">Bloque 3</span>
+      <h2>Campo Magnético</h2>
+    </div>
+
+    <div class="const-grid">
+      <div class="const-item"><span class="csym">μ₀</span><span class="cval">4π × 10⁻⁷ T·m/A</span></div>
+      <div class="const-item"><span class="csym">B</span><span class="cval">Tesla (T). 1 T = 1 kg/(A·s²)</span></div>
+    </div>
+
+    <h3 class="sh">Fuerza de Lorentz</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Fuerza sobre carga q en movimiento</div>
+        \[ \vec{F} = q\vec{v} \times \vec{B} \]
+        <div class="f-note">F = qvB·sin α. Perpendicular a v y a B.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Fuerza eléctrica + magnética</div>
+        \[ \vec{F} = q(\vec{E} + \vec{v} \times \vec{B}) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Fuerza sobre conductor de longitud L</div>
+        \[ F = BIL\sin\alpha \]
+        <div class="f-note">α = ángulo entre I y B.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Radio de trayectoria circular</div>
+        \[ r = \frac{mv}{qB} \]
+        <div class="f-note">De igualar F_Lorentz = F_centrípeta.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Período ciclotrónico</div>
+        \[ T = \frac{2\pi m}{qB} \]
+        <div class="f-note">No depende de la velocidad.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Frecuencia ciclotrónica</div>
+        \[ f = \frac{qB}{2\pi m} \]
+      </div>
+    </div>
+
+    <div class="ib tip">
+      <strong>Regla de la mano derecha (Lorentz):</strong> Dedos en dirección de \(\vec{v}\), se doblan hacia \(\vec{B}\), el pulgar señala \(\vec{F}\) (para q>0). Si q&lt;0, la fuerza es en sentido contrario.
+    </div>
+
+    <h3 class="sh" id="fuentes-b">Fuentes de campo magnético (Ley de Biot-Savart / Ampère)</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Hilo recto infinito</div>
+        \[ B = \frac{\mu_0 I}{2\pi r} \]
+        <div class="f-note">Líneas de B circulares y concéntricas al hilo.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Centro de espira circular de radio R</div>
+        \[ B = \frac{\mu_0 I}{2R} \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Solenoide (n = N/L vueltas/metro)</div>
+        \[ B = \mu_0 n I \]
+        <div class="f-note">B uniforme en el interior. Campo nulo fuera.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Fuerza entre dos hilos paralelos</div>
+        \[ \frac{F}{L} = \frac{\mu_0 I_1 I_2}{2\pi d} \]
+        <div class="f-note">Atractiva si misma dirección de I, repulsiva si contraria.</div>
+      </div>
+    </div>
+
+    <h3 class="sh" id="induccion">Inducción Electromagnética</h3>
+    <div class="f-grid">
+      <div class="f-box">
+        <div class="f-label">Flujo magnético</div>
+        \[ \Phi = B \cdot S \cdot \cos\theta \]
+        <div class="f-note">Unidad: Weber (Wb = T·m²). θ = ángulo entre B y normal a S.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Ley de Faraday (f.e.m. inducida)</div>
+        \[ \varepsilon = -\frac{d\Phi}{dt} \]
+        <div class="f-note">El signo (–) es la Ley de Lenz.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Para N espiras</div>
+        \[ \varepsilon = -N\frac{d\Phi}{dt} \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">f.e.m. de una barra en movimiento</div>
+        \[ \varepsilon = BLv \]
+        <div class="f-note">Barra de longitud L moviéndose con velocidad v ⊥ B.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Alternador (espira girando)</div>
+        \[ \varepsilon(t) = NBA\omega\sin(\omega t) \]
+        <div class="f-note">ε₀ = NBAω es la f.e.m. de pico.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Autoinducción</div>
+        \[ \varepsilon_L = -L\frac{dI}{dt} \]
+        <div class="f-note">L = autoinductancia (H = Henrio).</div>
+      </div>
+    </div>
+
+    <div class="ib warn">
+      <strong>Ley de Lenz:</strong> La corriente inducida tiene siempre el sentido necesario para oponerse a la variación del flujo que la origina. Es una consecuencia de la conservación de la energía.
+    </div>
+
+    <h4 class="subsh">Transformadores (corriente alterna)</h4>
+    <div class="f-grid">
+      <div class="f-box hi">
+        \[ \frac{V_s}{V_p} = \frac{N_s}{N_p} \]
+        <div class="f-note">Subida de tensión → bajada de intensidad y viceversa.</div>
+      </div>
+      <div class="f-box">
+        \[ V_p I_p = V_s I_s \]
+        <div class="f-note">Potencia conservada (transformador ideal).</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 4 — MAS
+  ══════════════════════════════════════════ -->
+  <section class="block" id="mas">
+    <div class="block-header">
+      <span class="block-label">Bloque 4</span>
+      <h2>Movimiento Armónico Simple</h2>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Ecuación de posición</div>
+        \[ x(t) = A\cos(\omega t + \varphi_0) \]
+        <div class="f-note">A = amplitud (m). φ₀ = fase inicial (rad).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Velocidad</div>
+        \[ v(t) = -A\omega\sin(\omega t + \varphi_0) \]
+        <div class="f-note">v_máx = Aω en x = 0.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Aceleración</div>
+        \[ a(t) = -A\omega^2\cos(\omega t + \varphi_0) = -\omega^2 x \]
+        <div class="f-note">a_máx = Aω² en x = ±A. Siempre apunta hacia el equilibrio.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Relaciones temporales</div>
+        \[ \omega = \frac{2\pi}{T} = 2\pi f \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Velocidad en función de x</div>
+        \[ v = \pm\omega\sqrt{A^2 - x^2} \]
+      </div>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Sistema</th><th>Período T</th><th>Frecuencia angular ω</th><th>Condición</th></tr>
+        <tr>
+          <td><strong>Muelle-masa</strong></td>
+          <td>\(T = 2\pi\sqrt{\dfrac{m}{k}}\)</td>
+          <td>\(\omega = \sqrt{\dfrac{k}{m}}\)</td>
+          <td>k = cte del muelle (N/m)</td>
+        </tr>
+        <tr>
+          <td><strong>Péndulo simple</strong></td>
+          <td>\(T = 2\pi\sqrt{\dfrac{L}{g}}\)</td>
+          <td>\(\omega = \sqrt{\dfrac{g}{L}}\)</td>
+          <td>Ángulos pequeños (&lt;15°)</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Energía en el MAS</h3>
+    <div class="f-grid">
+      <div class="f-box">
+        <div class="f-label">Energía cinética</div>
+        \[ E_c = \tfrac{1}{2}m\omega^2(A^2 - x^2) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Energía potencial (muelle)</div>
+        \[ E_p = \tfrac{1}{2}kx^2 = \tfrac{1}{2}m\omega^2 x^2 \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Energía total (constante)</div>
+        \[ E = \tfrac{1}{2}kA^2 = \tfrac{1}{2}m\omega^2 A^2 \]
+        <div class="f-note">No depende de x ni del tiempo.</div>
+      </div>
+    </div>
+
+    <div class="ib tip">
+      <strong>Puntos clave:</strong>
+      <p>En <strong>x = 0</strong>: v máxima, E_p = 0, E_c = E.</p>
+      <p>En <strong>x = ±A</strong>: v = 0, E_c = 0, E_p = E.</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 5 — ONDAS
+  ══════════════════════════════════════════ -->
+  <section class="block" id="ondas">
+    <div class="block-header">
+      <span class="block-label">Bloque 5</span>
+      <h2>Ondas Mecánicas</h2>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Relación fundamental</div>
+        \[ v = \lambda f = \frac{\lambda}{T} \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Ecuación de onda armónica</div>
+        \[ y(x,t) = A\sin\!\left(\frac{2\pi}{\lambda}x - \frac{2\pi}{T}t + \varphi_0\right) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Número de onda k</div>
+        \[ k = \frac{2\pi}{\lambda} \]
+        <div class="f-note">k aquí es el número de onda, NO la cte del muelle.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Forma compacta</div>
+        \[ y(x,t) = A\sin(kx - \omega t) \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Velocidad en cuerda tensa</div>
+        \[ v = \sqrt{\frac{T}{\mu}} \]
+        <div class="f-note">T = tensión (N) · μ = masa lineal (kg/m).</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Ondas estacionarias y armónicos</h3>
+    <p>Formadas por la superposición de dos ondas iguales que viajan en sentidos contrarios. Los <strong>nodos</strong> tienen amplitud cero; los <strong>vientres</strong>, amplitud máxima (= 2A).</p>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Sistema</th><th>Condición de resonancia</th><th>f fundamental</th><th>Armónicos</th></tr>
+        <tr>
+          <td>Cuerda (extremos fijos)</td>
+          <td>\(L = n\dfrac{\lambda}{2}\)</td>
+          <td>\(f_1 = \dfrac{v}{2L}\)</td>
+          <td>Todos: \(f_n = nf_1\)</td>
+        </tr>
+        <tr>
+          <td>Tubo cerrado (un extremo)</td>
+          <td>\(L = (2n-1)\dfrac{\lambda}{4}\)</td>
+          <td>\(f_1 = \dfrac{v}{4L}\)</td>
+          <td>Solo impares: \(f_n = (2n-1)f_1\)</td>
+        </tr>
+        <tr>
+          <td>Tubo abierto (ambos)</td>
+          <td>\(L = n\dfrac{\lambda}{2}\)</td>
+          <td>\(f_1 = \dfrac{v}{2L}\)</td>
+          <td>Todos: \(f_n = nf_1\)</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Intensidad sonora</h3>
+    <div class="f-grid">
+      <div class="f-box">
+        <div class="f-label">Intensidad (fuente puntual)</div>
+        \[ I = \frac{P}{4\pi r^2} \]
+        <div class="f-note">I₀ = 10⁻¹² W/m² (umbral audición).</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Nivel sonoro en dB</div>
+        \[ L = 10\log\!\left(\frac{I}{I_0}\right) \text{ dB} \]
+      </div>
+    </div>
+
+    <h3 class="sh" id="sonido">Efecto Doppler</h3>
+    <div class="f-full hi">
+      <div class="f-label">Frecuencia percibida por el observador</div>
+      \[ f' = f\cdot\frac{v \pm v_O}{v \mp v_F} \]
+      <div class="f-note"><strong>Numerador:</strong> + si el observador se acerca a la fuente, – si se aleja. <strong>Denominador:</strong> – si la fuente se acerca al observador, + si se aleja. Resultado: f' > f si se acercan, f' &lt; f si se alejan.</div>
+    </div>
+
+    <h3 class="sh">Interferencia y difracción</h3>
+    <div class="f-grid">
+      <div class="f-box">
+        <div class="f-label">Interferencia constructiva (máximos)</div>
+        \[ \Delta = n\lambda \quad n = 0,1,2,\ldots \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Interferencia destructiva (mínimos)</div>
+        \[ \Delta = \left(n+\tfrac{1}{2}\right)\lambda \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Doble rendija (Young) — posición máximos</div>
+        \[ y_n = \frac{n\lambda L}{d} \]
+        <div class="f-note">d = separación rendijas · L = distancia a la pantalla.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 6 — ÓPTICA GEOMÉTRICA
+  ══════════════════════════════════════════ -->
+  <section class="block" id="optica-geo">
+    <div class="block-header">
+      <span class="block-label">Bloque 6</span>
+      <h2>Óptica Geométrica</h2>
+    </div>
+
+    <div class="f-grid">
+      <div class="f-box">
+        <div class="f-label">Velocidad de la luz</div>
+        \[ c = 3 \times 10^8\text{ m/s} \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Índice de refracción</div>
+        \[ n = \frac{c}{v} \geq 1 \]
+        <div class="f-note">En el vacío n=1. A mayor n, menor velocidad.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Ley de Snell (refracción)</div>
+        \[ n_1\sin\theta_1 = n_2\sin\theta_2 \]
+        <div class="f-note">Al pasar a medio más denso (mayor n), se acerca a la normal.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Reflexión — Ley de reflexión</div>
+        \[ \theta_i = \theta_r \]
+        <div class="f-note">El ángulo incidente = ángulo reflejado (ambos respecto a la normal).</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Ángulo límite (reflexión total interna)</div>
+        \[ \sin\theta_c = \frac{n_2}{n_1} \quad (n_1 > n_2) \]
+        <div class="f-note">Si θ > θ_c: reflexión total. Base de la fibra óptica.</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Lentes delgadas y espejos</h3>
+    <div class="f-full hi">
+      <div class="f-label">Ecuación de conjugación (espejos y lentes)</div>
+      \[ \frac{1}{f} = \frac{1}{s_o} + \frac{1}{s_i} \]
+      <div class="f-note">s_o = distancia objeto (>0 siempre). s_i >0 → imagen real; s_i &lt;0 → imagen virtual.</div>
+    </div>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Ampliación lateral</div>
+        \[ m = -\frac{s_i}{s_o} = \frac{y_i}{y_o} \]
+        <div class="f-note">|m|>1 → ampliada. m>0 → imagen erecta. m&lt;0 → invertida.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Potencia de una lente</div>
+        \[ P = \frac{1}{f(\text{m})} \]
+        <div class="f-note">Unidad: dioptría (D). f en metros.</div>
+      </div>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Tipo</th><th>f</th><th>Imagen real</th><th>Imagen virtual</th><th>Uso</th></tr>
+        <tr><td>Lente convergente</td><td>f &gt; 0</td><td>s_o &gt; f → real, invertida</td><td>s_o &lt; f → virtual, directa, ampliada</td><td>Lupa, cámara, ojo</td></tr>
+        <tr><td>Lente divergente</td><td>f &lt; 0</td><td>Nunca</td><td>Siempre virtual, directa, reducida</td><td>Corrección miopía</td></tr>
+        <tr><td>Espejo cóncavo</td><td>f &gt; 0</td><td>s_o &gt; f → real, invertida</td><td>s_o &lt; f → virtual, directa, ampliada</td><td>Telescopio reflector</td></tr>
+        <tr><td>Espejo convexo</td><td>f &lt; 0</td><td>Nunca</td><td>Siempre virtual, directa, reducida</td><td>Retrovisores</td></tr>
+      </table>
+    </div>
+
+    <div class="ib warn">
+      <strong>⚠ Convención de signos:</strong> s_o siempre positivo. Para lentes: s_i &gt;0 si la imagen está al otro lado del objeto (imagen real). Para espejos: s_i &gt;0 si la imagen está delante del espejo (imagen real).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 7 — ÓPTICA FÍSICA
+  ══════════════════════════════════════════ -->
+  <section class="block" id="optica-fis">
+    <div class="block-header">
+      <span class="block-label">Bloque 7</span>
+      <h2>Óptica Física</h2>
+    </div>
+
+    <h3 class="sh">Interferencia (experimento de Young)</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Diferencia de camino</div>
+        \[ \Delta = d\sin\theta \approx d\frac{y}{L} \]
+        <div class="f-note">d = sep. rendijas · y = posición en pantalla · L = distancia pantalla.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Máximos (interferencia constructiva)</div>
+        \[ y_n = \frac{n\lambda L}{d}, \quad n = 0,\pm1,\pm2,\ldots \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Mínimos (interferencia destructiva)</div>
+        \[ y_n = \frac{(2n+1)\lambda L}{2d} \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Separación entre franjas</div>
+        \[ \Delta y = \frac{\lambda L}{d} \]
+        <div class="f-note">Franjas más separadas → λ mayor o d menor.</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Difracción y polarización</h3>
+    <div class="f-grid">
+      <div class="f-box">
+        <div class="f-label">1er mínimo en rendija simple (anchura a)</div>
+        \[ \sin\theta = \frac{\lambda}{a} \]
+      </div>
+    </div>
+    <div class="ib key">
+      <strong>Polarización:</strong> La luz es una onda transversal. Un polarizador reduce la intensidad según la Ley de Malus: I = I₀·cos²θ, donde θ es el ángulo entre el plano de polarización y el eje del polarizador.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 8 — RELATIVIDAD
+  ══════════════════════════════════════════ -->
+  <section class="block" id="relatividad">
+    <div class="block-header">
+      <span class="block-label">Bloque 8</span>
+      <h2>Relatividad Especial</h2>
+    </div>
+
+    <div class="law-box">
+      <div class="law-num">1er Postulado — Principio de relatividad</div>
+      <div class="law-title">Las leyes de la física son iguales en todos los sistemas de referencia inerciales.</div>
+    </div>
+    <div class="law-box">
+      <div class="law-num">2º Postulado — Constancia de c</div>
+      <div class="law-title">La velocidad de la luz en el vacío es la misma para todos los observadores: c = 3×10⁸ m/s.</div>
+    </div>
+
+    <h3 class="sh">Consecuencias</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Factor de Lorentz γ</div>
+        \[ \gamma = \frac{1}{\sqrt{1-\dfrac{v^2}{c^2}}} \geq 1 \]
+        <div class="f-note">γ = 1 cuando v ≪ c (recuperamos mecánica clásica).</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Dilatación temporal</div>
+        \[ \Delta t = \gamma\,\Delta t_0 \]
+        <div class="f-note">Δt₀ = tiempo propio (en reposo). Δt > Δt₀ siempre.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Contracción de la longitud</div>
+        \[ L = \frac{L_0}{\gamma} \]
+        <div class="f-note">L₀ = longitud propia (en reposo). L &lt; L₀ siempre.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Masa relativista</div>
+        \[ m = \gamma m_0 \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Equivalencia masa–energía</div>
+        \[ E = mc^2 = \gamma m_0 c^2 \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Energía en reposo</div>
+        \[ E_0 = m_0 c^2 \]
+        <div class="f-note">Energía cinética relativista: E_c = (γ–1)m₀c²</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Relación energía–momento</div>
+        \[ E^2 = (pc)^2 + (m_0 c^2)^2 \]
+        <div class="f-note">Para fotones (m₀=0): E = pc.</div>
+      </div>
+    </div>
+
+    <div class="ib key">
+      <strong>Ningún objeto con masa puede alcanzar c.</strong> A medida que v→c, la energía necesaria → ∞. Los fotones (m₀=0) viajan siempre a c y no tienen sistema de referencia propio.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 9 — FÍSICA CUÁNTICA
+  ══════════════════════════════════════════ -->
+  <section class="block" id="cuantica">
+    <div class="block-header">
+      <span class="block-label">Bloque 9</span>
+      <h2>Física Cuántica</h2>
+    </div>
+
+    <div class="const-grid">
+      <div class="const-item"><span class="csym">h</span><span class="cval">6.626 × 10⁻³⁴ J·s</span></div>
+      <div class="const-item"><span class="csym">1 eV</span><span class="cval">1.6 × 10⁻¹⁹ J</span></div>
+    </div>
+
+    <h3 class="sh">Hipótesis de Planck y el fotón</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Energía del fotón</div>
+        \[ E = hf = \frac{hc}{\lambda} \]
+        <div class="f-note">h = 6.626×10⁻³⁴ J·s. La energía depende solo de la frecuencia.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Momento del fotón</div>
+        \[ p = \frac{h}{\lambda} = \frac{E}{c} \]
+      </div>
+    </div>
+
+    <h3 class="sh">Efecto fotoeléctrico (Einstein, 1905)</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Ecuación de Einstein del efecto fotoeléctrico</div>
+        \[ E_c = hf - \Phi \]
+        <div class="f-note">Φ = trabajo de extracción del metal (función de trabajo). E_c ≥ 0.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Frecuencia umbral f₀</div>
+        \[ f_0 = \frac{\Phi}{h} \]
+        <div class="f-note">Si f &lt; f₀, no hay efecto fotoeléctrico independientemente de la intensidad.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Potencial de frenado V₀</div>
+        \[ eV_0 = E_{c,\max} = hf - \Phi \]
+        <div class="f-note">Tensión necesaria para detener los fotoelectrones más rápidos.</div>
+      </div>
+    </div>
+
+    <div class="ib warn">
+      <strong>Claves del efecto fotoeléctrico:</strong>
+      <p>El <strong>número</strong> de electrones emitidos depende de la <em>intensidad</em> de la luz.</p>
+      <p>La <strong>energía</strong> de cada electrón depende solo de la <em>frecuencia</em> (no de la intensidad).</p>
+      <p>Existe una frecuencia umbral: por debajo de ella, no hay emisión por mucha intensidad que apliques.</p>
+    </div>
+
+    <h3 class="sh">Dualidad onda–corpúsculo y De Broglie</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Longitud de onda de De Broglie</div>
+        \[ \lambda = \frac{h}{p} = \frac{h}{mv} \]
+        <div class="f-note">Cualquier partícula con momento p tiene asociada una longitud de onda.</div>
+      </div>
+    </div>
+    <div class="ib key">
+      La dualidad onda–corpúsculo dice que la luz se comporta como onda (interferencias, difracción) y como partícula (efecto fotoeléctrico, Compton). Lo mismo ocurre con los electrones y otras partículas.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 10 — MODELOS ATÓMICOS
+  ══════════════════════════════════════════ -->
+  <section class="block" id="atomico">
+    <div class="block-header">
+      <span class="block-label">Bloque 10</span>
+      <h2>Modelos Atómicos</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Modelo</th><th>Autor</th><th>Aportación principal</th><th>Limitación</th></tr>
+        <tr>
+          <td>Pudín de pasas</td>
+          <td>Thomson (1897)</td>
+          <td>Descubrimiento del electrón; átomo como esfera + de carga con electrones incrustados</td>
+          <td>No explica los resultados de Rutherford</td>
+        </tr>
+        <tr>
+          <td>Nuclear planetario</td>
+          <td>Rutherford (1911)</td>
+          <td>Núcleo pequeño, denso y positivo; electrones orbitando</td>
+          <td>Átomo clásicamente inestable (electrón acelerado irradia y cae)</td>
+        </tr>
+        <tr>
+          <td>Cuantizado</td>
+          <td>Bohr (1913)</td>
+          <td>Órbitas estacionarias cuantizadas; explica el espectro del hidrógeno</td>
+          <td>Solo funciona para el hidrógeno (un electrón)</td>
+        </tr>
+        <tr>
+          <td>Mecánica cuántica</td>
+          <td>Schrödinger / Heisenberg (1926)</td>
+          <td>Función de onda; orbitales como densidades de probabilidad</td>
+          <td>—</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Modelo de Bohr del hidrógeno</h3>
+    <p>Hipótesis: el momento angular está cuantizado: \(L = n\hbar\) con n = 1, 2, 3, … (número cuántico principal).</p>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Niveles de energía del H</div>
+        \[ E_n = -\frac{13.6}{n^2}\text{ eV} \]
+        <div class="f-note">E₁ = –13.6 eV (fundamental). E_ionización = 13.6 eV.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Radio de la órbita n</div>
+        \[ r_n = n^2 a_0 \]
+        <div class="f-note">a₀ = 0.529 Å = radio de Bohr.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Fotón emitido o absorbido</div>
+        \[ hf = |E_{n_f} - E_{n_i}| \]
+        <div class="f-note">Emisión: salto a n menor. Absorción: salto a n mayor.</div>
+      </div>
+    </div>
+
+    <div class="ib tip">
+      <strong>Series espectrales:</strong> Lyman (UV, n_f=1), Balmer (visible, n_f=2, la que ves en el espectro del H), Paschen (IR, n_f=3).
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       BLOQUE 11 — FÍSICA NUCLEAR
+  ══════════════════════════════════════════ -->
+  <section class="block" id="nuclear">
+    <div class="block-header">
+      <span class="block-label">Bloque 11</span>
+      <h2>Física Nuclear</h2>
+    </div>
+
+    <div class="const-grid">
+      <div class="const-item"><span class="csym">m_p</span><span class="cval">1.6726 × 10⁻²⁷ kg</span></div>
+      <div class="const-item"><span class="csym">m_n</span><span class="cval">1.6749 × 10⁻²⁷ kg</span></div>
+      <div class="const-item"><span class="csym">m_e</span><span class="cval">9.109 × 10⁻³¹ kg</span></div>
+      <div class="const-item"><span class="csym">1 u</span><span class="cval">1.6605 × 10⁻²⁷ kg = 931.5 MeV/c²</span></div>
+    </div>
+
+    <h3 class="sh">Núcleo atómico</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Notación nuclear</div>
+        \[ {}^A_Z X \]
+        <div class="f-note">Z = protones (n.º atómico) · N = A – Z neutrones · A = masa.</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Defecto de masa</div>
+        \[ \Delta m = Z m_p + N m_n - m_{núcleo} \]
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Energía de ligadura (enlace nuclear)</div>
+        \[ E_b = \Delta m \cdot c^2 \]
+        <div class="f-note">Mayor E_b por nucleón → núcleo más estable. Máximo en torno al Fe (A≈56).</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Tipos de radiactividad</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Tipo</th><th>Partícula emitida</th><th>Cambio en Z</th><th>Cambio en A</th><th>Penetración</th></tr>
+        <tr>
+          <td><strong>Alfa α</strong></td>
+          <td>Núcleo de ⁴He</td>
+          <td>Z – 2</td>
+          <td>A – 4</td>
+          <td>Baja (papel, piel)</td>
+        </tr>
+        <tr>
+          <td><strong>Beta⁻ β⁻</strong></td>
+          <td>Electrón + antineutrino</td>
+          <td>Z + 1</td>
+          <td>A = cte</td>
+          <td>Media (aluminio mm)</td>
+        </tr>
+        <tr>
+          <td><strong>Beta⁺ β⁺</strong></td>
+          <td>Positrón + neutrino</td>
+          <td>Z – 1</td>
+          <td>A = cte</td>
+          <td>Media</td>
+        </tr>
+        <tr>
+          <td><strong>Gamma γ</strong></td>
+          <td>Fotón de alta energía</td>
+          <td>Sin cambio</td>
+          <td>Sin cambio</td>
+          <td>Alta (plomo, hormigón)</td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Ley de desintegración radiactiva</h3>
+    <div class="f-grid">
+      <div class="f-box hi">
+        <div class="f-label">Número de núcleos en el tiempo t</div>
+        \[ N(t) = N_0\,e^{-\lambda t} \]
+        <div class="f-note">λ = constante de desintegración (s⁻¹).</div>
+      </div>
+      <div class="f-box hi">
+        <div class="f-label">Período de semidesintegración T½</div>
+        \[ T_{1/2} = \frac{\ln 2}{\lambda} = \frac{0.693}{\lambda} \]
+        <div class="f-note">Tiempo para que la muestra se reduzca a la mitad.</div>
+      </div>
+      <div class="f-box">
+        <div class="f-label">Usando T½ directamente</div>
+        \[ N(t) = N_0\left(\frac{1}{2}\right)^{t/T_{1/2}} \]
+      </div>
+      <div class="f-box">
+        <div class="f-label">Actividad A (Becquerel)</div>
+        \[ A = \lambda N = A_0 e^{-\lambda t} \]
+        <div class="f-note">1 Bq = 1 desintegración/s.</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Reacciones nucleares: fisión y fusión</h3>
+    <div class="f-full hi">
+      <div class="f-label">Energía liberada en cualquier reacción nuclear</div>
+      \[ E = \Delta m \cdot c^2 \quad \text{donde} \quad \Delta m = m_{\text{reactivos}} - m_{\text{productos}} \]
+      <div class="f-note">Si Δm > 0 → reacción exotérmica (libera energía). Si Δm &lt; 0 → endotérmica (absorbe energía).</div>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th></th><th>Fisión</th><th>Fusión</th></tr>
+        <tr><td><strong>Proceso</strong></td><td>Núcleo pesado → dos más ligeros</td><td>Dos núcleos ligeros → uno más pesado</td></tr>
+        <tr><td><strong>Ejemplo</strong></td><td>²³⁵U + n → ⁹²Kr + ¹⁴¹Ba + 3n</td><td>²H + ³H → ⁴He + n</td></tr>
+        <tr><td><strong>Condición</strong></td><td>A &gt; 56 (más pesado que el hierro)</td><td>A &lt; 56 (más ligero que el hierro)</td></tr>
+        <tr><td><strong>Energía</strong></td><td>~200 MeV por fisión</td><td>~17.6 MeV por fusión (más por kg)</td></tr>
+        <tr><td><strong>Aplicación</strong></td><td>Centrales nucleares, bomba atómica</td><td>Estrellas, ITER, bomba H</td></tr>
+      </table>
+    </div>
+
+    <div class="ib warn">
+      <strong>⚠ Leyes de conservación en reacciones nucleares:</strong>
+      <p>• Número másico A: siempre se conserva.</p>
+      <p>• Número atómico Z: siempre se conserva.</p>
+      <p>• Energía-masa total: se conserva (defecto de masa = energía liberada).</p>
+      <p>• Momento lineal: se conserva.</p>
+    </div>
+
+  </section>
+
+  <div class="page-footer">
+    FÍSICA · EVAU 2026 · <a href="index.html" style="color:var(--muted)">← Volver al inicio</a>
+  </div>
+
+</main>
+</div><!-- .page-layout -->
+
+<script>
+// Highlight active sidebar link on scroll
+const sections = document.querySelectorAll('section[id], div[id]');
+const links = document.querySelectorAll('.sb-link');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.sb-link[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { rootMargin: `-${56+16}px 0px -60% 0px`, threshold: 0 });
+sections.forEach(s => obs.observe(s));
+</script>
+
+</body>
+</html>
