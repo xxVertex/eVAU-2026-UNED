@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inglés — EvAU 2026 · UNED</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  .lang-example {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 10px 0;
+    font-size: 0.88rem;
+  }
+  .lang-example .en {
+    color: var(--accent);
+    font-style: italic;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .lang-example .es {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .tense-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+    margin: 10px 0;
+  }
+  .tense-card .tc-name {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .tense-card .tc-form {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .tense-card .tc-use {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .tense-card .tc-ex {
+    font-size: 0.82rem;
+    font-style: italic;
+    color: var(--accent);
+  }
+  .tense-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    margin: 14px 0;
+  }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .pill {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .pill.hi { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--surface2)); }
+  .rule-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 12px 0;
+    font-size: 0.875rem;
+    line-height: 1.7;
+  }
+  .rule-box .rule-title {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body data-subject="eng">
+
+<header class="topbar">
+  <div class="topbar-logo">e<span>V</span>AU <span>2026</span></div>
+  <nav class="topbar-nav">
+    <a href="index.html">Inicio</a>
+    <a href="fisica.html" class="fisica">Física</a>
+    <a href="matematicas-ii.html" class="mat2">Matemáticas II</a>
+    <a href="matematicas-ccss.html" class="matcc">Matemáticas CCSS</a>
+    <a href="italiano.html" class="ita">Italiano</a>
+    <a href="ingles.html" class="eng active">Inglés</a>
+  </nav>
+  <span class="topbar-tag">Inglés</span>
+</header>
+
+<div class="page-layout">
+
+<nav class="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Verb Tenses</div>
+    <a href="#present" class="sb-link">Present tenses</a>
+    <a href="#past" class="sb-link">Past tenses</a>
+    <a href="#future" class="sb-link">Future forms</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Key Structures</div>
+    <a href="#conditionals" class="sb-link">Conditionals</a>
+    <a href="#passive" class="sb-link">Passive voice</a>
+    <a href="#reported" class="sb-link">Reported speech</a>
+    <a href="#modals" class="sb-link">Modal verbs</a>
+    <a href="#relative" class="sb-link">Relative clauses</a>
+    <a href="#gerunds" class="sb-link">Gerunds vs infinitives</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Grammar</div>
+    <a href="#articles" class="sb-link">Articles</a>
+    <a href="#prepositions" class="sb-link">Prepositions</a>
+    <a href="#phrasal" class="sb-link">Phrasal verbs</a>
+    <a href="#connectors" class="sb-link">Connectors</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Writing</div>
+    <a href="#essay" class="sb-link">Essay writing</a>
+    <a href="#letter" class="sb-link">Formal letter / email</a>
+    <a href="#vocabulary" class="sb-link">Vocabulary by topic</a>
+  </div>
+</nav>
+
+<main class="page-main">
+
+  <div class="page-hero">
+    <div class="kicker">UNED · Complete Notes · 2026</div>
+    <h1>Inglés</h1>
+    <p class="desc">Complete English grammar: all verb tenses, key structures, modals, conditionals, writing skills and vocabulary according to the UNED curriculum.</p>
+    <div class="hero-tags">
+      <span class="htag">Tenses</span>
+      <span class="htag">Conditionals</span>
+      <span class="htag">Modals</span>
+      <span class="htag">Passive</span>
+      <span class="htag">Writing</span>
+    </div>
+  </div>
+
+  <!-- ══════════ PRESENT TENSES ══════════ -->
+  <section class="block" id="present">
+    <div class="block-header">
+      <span class="block-label">Verb Tenses</span>
+      <h2>Present Tenses</h2>
+    </div>
+
+    <div class="tense-grid">
+      <div class="tense-card">
+        <div class="tc-name">Present Simple</div>
+        <div class="tc-form">I work / She works</div>
+        <div class="tc-use">Hábitos, rutinas, verdades generales, horarios fijos. Marcadores: always, usually, often, sometimes, never, every day.</div>
+        <div class="tc-ex">"She studies English every morning."</div>
+      </div>
+      <div class="tense-card">
+        <div class="tc-name">Present Continuous</div>
+        <div class="tc-form">I am working / She is working</div>
+        <div class="tc-use">Acciones en progreso ahora, tendencias temporales, planes futuros cercanos. Marcadores: now, at the moment, currently, today, this week.</div>
+        <div class="tc-ex">"They are building a new school." / "I'm meeting her tomorrow."</div>
+      </div>
+      <div class="tense-card">
+        <div class="tc-name">Present Perfect Simple</div>
+        <div class="tc-form">I have worked / She has worked</div>
+        <div class="tc-use">Experiencias de vida, acciones con resultado presente, acciones recientes. Marcadores: ever, never, already, yet, just, recently, since, for.</div>
+        <div class="tc-ex">"I have never been to Japan." / "She has just left."</div>
+      </div>
+      <div class="tense-card">
+        <div class="tc-name">Present Perfect Continuous</div>
+        <div class="tc-form">I have been working</div>
+        <div class="tc-use">Acción que empezó en el pasado y continúa (énfasis en la duración). Marcadores: for, since, all day, how long.</div>
+        <div class="tc-ex">"He has been studying for three hours." / "How long have you been waiting?"</div>
+      </div>
+    </div>
+
+    <div class="ib warn">
+      <strong>State verbs — no se usan en Continuous:</strong> know, understand, believe, think (= opinar), want, need, like, love, hate, seem, appear, contain, belong, own, cost, mean, remember, forget. → "I know" ✓ / "I am knowing" ✗
+    </div>
+
+    <div class="ib key">
+      <strong>Since vs. For:</strong> Since + punto en el tiempo (since 2020, since Monday) / For + duración (for three years, for a long time).
+    </div>
+  </section>
+
+  <!-- ══════════ PAST TENSES ══════════ -->
+  <section class="block" id="past">
+    <div class="block-header">
+      <span class="block-label">Verb Tenses</span>
+      <h2>Past Tenses</h2>
+    </div>
+
+    <div class="tense-grid">
+      <div class="tense-card">
+        <div class="tc-name">Past Simple</div>
+        <div class="tc-form">I worked / She worked (regular) · I went / She went (irregular)</div>
+        <div class="tc-use">Acción completa en el pasado, en un momento concreto. Marcadores: yesterday, last week/year, ago, in 1990, when.</div>
+        <div class="tc-ex">"She visited Rome last summer." / "Did you see the film?"</div>
+      </div>
+      <div class="tense-card">
+        <div class="tc-name">Past Continuous</div>
+        <div class="tc-form">I was working / They were working</div>
+        <div class="tc-use">Acción en progreso en un momento del pasado; acción de fondo interrumpida por otra (past simple).</div>
+        <div class="tc-ex">"While I was cooking, the phone rang." / "At 8pm she was studying."</div>
+      </div>
+      <div class="tense-card">
+        <div class="tc-name">Past Perfect Simple</div>
+        <div class="tc-form">I had worked / She had gone</div>
+        <div class="tc-use">Acción pasada anterior a otra acción pasada ("el más que perfecto"). Marcadores: already, just, before, after, by the time, when.</div>
+        <div class="tc-ex">"When I arrived, the film had already started." / "She had never flown before."</div>
+      </div>
+      <div class="tense-card">
+        <div class="tc-name">Past Perfect Continuous</div>
+        <div class="tc-form">I had been working</div>
+        <div class="tc-use">Acción en progreso en el pasado hasta otro momento pasado (énfasis en la duración).</div>
+        <div class="tc-ex">"He had been waiting for two hours when she finally arrived."</div>
+      </div>
+    </div>
+
+    <h3 class="sh">Used to / Would / Be used to / Get used to</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Estructura</th><th>Uso</th><th>Ejemplo</th></tr>
+        <tr><td><strong>used to + inf.</strong></td><td>Hábito o estado en el pasado que ya no existe</td><td><em>I used to smoke. She used to live here.</em></td></tr>
+        <tr><td><strong>would + inf.</strong></td><td>Hábito pasado repetido (solo acciones, no estados)</td><td><em>Every Sunday, we would visit grandma.</em></td></tr>
+        <tr><td><strong>be used to + -ing</strong></td><td>Estar acostumbrado a (hábito actual)</td><td><em>I'm used to waking up early.</em></td></tr>
+        <tr><td><strong>get used to + -ing</strong></td><td>Acostumbrarse a (proceso)</td><td><em>She is getting used to living alone.</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ FUTURE ══════════ -->
+  <section class="block" id="future">
+    <div class="block-header">
+      <span class="block-label">Verb Tenses</span>
+      <h2>Future Forms</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Forma</th><th>Uso</th><th>Ejemplo</th></tr>
+        <tr>
+          <td><strong>will + inf.</strong></td>
+          <td>Predicción sin evidencia presente, decisión espontánea, promesa, oferta</td>
+          <td><em>It will rain tomorrow. I'll help you. I'll have the salad.</em></td>
+        </tr>
+        <tr>
+          <td><strong>be going to + inf.</strong></td>
+          <td>Plan o intención previa, predicción con evidencia presente</td>
+          <td><em>I'm going to study law. Look at those clouds — it's going to rain.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Present Continuous</strong></td>
+          <td>Arreglo o plan concreto con otra persona (futuro próximo)</td>
+          <td><em>We're having dinner with them on Friday.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Present Simple</strong></td>
+          <td>Horarios fijos, programas, transportes</td>
+          <td><em>The train leaves at 8:30.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Future Continuous</strong> (will be + -ing)</td>
+          <td>Acción en progreso en un momento futuro; acción planificada (educado)</td>
+          <td><em>This time tomorrow I'll be flying to London.</em></td>
+        </tr>
+        <tr>
+          <td><strong>Future Perfect</strong> (will have + pp.)</td>
+          <td>Acción que se habrá completado antes de un momento futuro</td>
+          <td><em>By next year, I will have graduated.</em></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ CONDITIONALS ══════════ -->
+  <section class="block" id="conditionals">
+    <div class="block-header">
+      <span class="block-label">Structures</span>
+      <h2>Conditionals</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Type</th><th>If clause</th><th>Main clause</th><th>Use</th></tr>
+        <tr>
+          <td><strong>Zero</strong></td>
+          <td>if + present simple</td>
+          <td>present simple</td>
+          <td>Verdades generales, hechos científicos</td>
+        </tr>
+        <tr>
+          <td><strong>First</strong></td>
+          <td>if + present simple</td>
+          <td>will + infinitive</td>
+          <td>Condición real o posible en el futuro</td>
+        </tr>
+        <tr>
+          <td><strong>Second</strong></td>
+          <td>if + past simple</td>
+          <td>would + infinitive</td>
+          <td>Situación imaginaria o poco probable en el presente/futuro</td>
+        </tr>
+        <tr>
+          <td><strong>Third</strong></td>
+          <td>if + past perfect</td>
+          <td>would have + past participle</td>
+          <td>Situación imaginaria en el pasado (irreversible)</td>
+        </tr>
+        <tr>
+          <td><strong>Mixed</strong></td>
+          <td>if + past perfect</td>
+          <td>would + infinitive</td>
+          <td>Condición pasada con consecuencia en el presente</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="lang-example">
+      <span class="en">Zero: If you heat water to 100°C, it boils.</span>
+      <span class="es">Si calientas agua a 100°C, hierve.</span>
+    </div>
+    <div class="lang-example">
+      <span class="en">First: If it rains tomorrow, we will cancel the trip.</span>
+      <span class="es">Si llueve mañana, cancelaremos el viaje.</span>
+    </div>
+    <div class="lang-example">
+      <span class="en">Second: If I had more money, I would buy a new car. / If I were you, I would apologise.</span>
+      <span class="es">Si tuviera más dinero, compraría un coche nuevo. / Si yo fuera tú, me disculparía.</span>
+    </div>
+    <div class="lang-example">
+      <span class="en">Third: If she had studied harder, she would have passed the exam.</span>
+      <span class="es">Si hubiera estudiado más, habría aprobado el examen.</span>
+    </div>
+    <div class="lang-example">
+      <span class="en">Mixed: If he had left earlier, he would be here now.</span>
+      <span class="es">Si hubiera salido antes, estaría aquí ahora.</span>
+    </div>
+
+    <div class="ib tip">
+      <strong>Unless = if not:</strong> <em>Unless you study, you will fail.</em> = <em>If you don't study, you will fail.</em><br>
+      <strong>Otras conjunciones condicionales:</strong> provided (that), as long as, on condition that, supposing (that), in case.
+    </div>
+  </section>
+
+  <!-- ══════════ PASSIVE ══════════ -->
+  <section class="block" id="passive">
+    <div class="block-header">
+      <span class="block-label">Structures</span>
+      <h2>Passive Voice</h2>
+    </div>
+
+    <div class="rule-box">
+      <div class="rule-title">Formation: be (in the correct tense) + past participle</div>
+      The agent (quien hace la acción) se introduce con <strong>by</strong>. Se omite si es desconocido, obvio o irrelevante.
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Tense</th><th>Active</th><th>Passive</th></tr>
+        <tr><td>Present Simple</td><td>They make cars here.</td><td>Cars <strong>are made</strong> here.</td></tr>
+        <tr><td>Present Continuous</td><td>They are building a bridge.</td><td>A bridge <strong>is being built</strong>.</td></tr>
+        <tr><td>Past Simple</td><td>Someone stole my bag.</td><td>My bag <strong>was stolen</strong>.</td></tr>
+        <tr><td>Past Continuous</td><td>They were filming a movie.</td><td>A movie <strong>was being filmed</strong>.</td></tr>
+        <tr><td>Present Perfect</td><td>They have announced the results.</td><td>The results <strong>have been announced</strong>.</td></tr>
+        <tr><td>Past Perfect</td><td>They had repaired the road.</td><td>The road <strong>had been repaired</strong>.</td></tr>
+        <tr><td>Future (will)</td><td>They will publish the book.</td><td>The book <strong>will be published</strong>.</td></tr>
+        <tr><td>Modal</td><td>They must complete the form.</td><td>The form <strong>must be completed</strong>.</td></tr>
+        <tr><td>Infinitive</td><td>Someone needs to clean this.</td><td>This needs <strong>to be cleaned</strong>.</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Impersonal passive (It is said that… / He is said to…)</h3>
+    <div class="lang-example">
+      <span class="en">People say that she is brilliant. → It is said that she is brilliant. / She is said to be brilliant.</span>
+      <span class="es">Se dice que es brillante.</span>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Verbos comunes: say, believe, think, know, consider, report, claim, expect, suppose, understand</div>
+      <em>It is believed that… / It is reported that… / She is expected to…</em>
+    </div>
+  </section>
+
+  <!-- ══════════ REPORTED SPEECH ══════════ -->
+  <section class="block" id="reported">
+    <div class="block-header">
+      <span class="block-label">Structures</span>
+      <h2>Reported Speech</h2>
+    </div>
+
+    <h3 class="sh">Backshift of tenses</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Direct speech</th><th>Reported speech</th></tr>
+        <tr><td>Present Simple → <em>"I work"</em></td><td>Past Simple → <em>…that she worked</em></td></tr>
+        <tr><td>Present Continuous → <em>"I am working"</em></td><td>Past Continuous → <em>…that she was working</em></td></tr>
+        <tr><td>Present Perfect → <em>"I have worked"</em></td><td>Past Perfect → <em>…that she had worked</em></td></tr>
+        <tr><td>Past Simple → <em>"I worked"</em></td><td>Past Perfect → <em>…that she had worked</em></td></tr>
+        <tr><td>will → <em>"I will go"</em></td><td>would → <em>…that she would go</em></td></tr>
+        <tr><td>can → <em>"I can swim"</em></td><td>could → <em>…that she could swim</em></td></tr>
+        <tr><td>may → <em>"It may rain"</em></td><td>might → <em>…that it might rain</em></td></tr>
+        <tr><td>must → <em>"You must go"</em></td><td>had to → <em>…that she had to go</em></td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Changes in time and place expressions</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Direct</th><th>Reported</th><th>Direct</th><th>Reported</th></tr>
+        <tr><td>now</td><td>then / at that moment</td><td>today</td><td>that day</td></tr>
+        <tr><td>yesterday</td><td>the day before / the previous day</td><td>tomorrow</td><td>the next day / the following day</td></tr>
+        <tr><td>last week</td><td>the previous week</td><td>next week</td><td>the following week</td></tr>
+        <tr><td>here</td><td>there</td><td>this</td><td>that</td></tr>
+        <tr><td>these</td><td>those</td><td>ago</td><td>before</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Reporting verbs</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Pattern</th><th>Verbs</th><th>Example</th></tr>
+        <tr><td>verb + that</td><td>say, tell, admit, explain, claim, deny, promise, warn, suggest, insist</td><td><em>She said that she was tired.</em></td></tr>
+        <tr><td>verb + to-inf.</td><td>offer, refuse, agree, promise, threaten, decide</td><td><em>He offered to help.</em></td></tr>
+        <tr><td>verb + sb + to-inf.</td><td>ask, tell, warn, advise, invite, remind, encourage, order, persuade</td><td><em>She told me to leave.</em></td></tr>
+        <tr><td>verb + -ing</td><td>admit, deny, suggest, recommend, regret</td><td><em>He denied stealing it.</em></td></tr>
+        <tr><td>verb + sb + for + -ing</td><td>thank, blame, apologise</td><td><em>She thanked me for helping.</em></td></tr>
+      </table>
+    </div>
+    <div class="ib tip">
+      <strong>Questions in reported speech:</strong><br>
+      Wh-questions: <em>"Where do you live?" → He asked where I lived.</em> (afirmativo, sin auxiliar)<br>
+      Yes/No questions: <em>"Do you speak French?" → She asked if/whether I spoke French.</em>
+    </div>
+  </section>
+
+  <!-- ══════════ MODALS ══════════ -->
+  <section class="block" id="modals">
+    <div class="block-header">
+      <span class="block-label">Structures</span>
+      <h2>Modal Verbs</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Modal</th><th>Uso principal</th><th>Ejemplo</th></tr>
+        <tr><td><strong>can</strong></td><td>Habilidad (presente), permiso informal, posibilidad</td><td><em>She can speak three languages. Can I go out?</em></td></tr>
+        <tr><td><strong>could</strong></td><td>Habilidad (pasado), posibilidad, petición cortés, sugerencia</td><td><em>I could run fast when I was young. Could you help me?</em></td></tr>
+        <tr><td><strong>may</strong></td><td>Posibilidad (50%), permiso formal</td><td><em>It may rain. May I come in?</em></td></tr>
+        <tr><td><strong>might</strong></td><td>Posibilidad menor (&lt;50%), sugerencia tentativa</td><td><em>He might be at home. You might want to reconsider.</em></td></tr>
+        <tr><td><strong>must</strong></td><td>Obligación fuerte (interno), deducción lógica (certeza)</td><td><em>You must wear a seatbelt. She must be tired.</em></td></tr>
+        <tr><td><strong>mustn't</strong></td><td>Prohibición</td><td><em>You mustn't smoke here.</em></td></tr>
+        <tr><td><strong>have to</strong></td><td>Obligación externa (reglas, circunstancias)</td><td><em>I have to submit the report by Friday.</em></td></tr>
+        <tr><td><strong>don't have to</strong></td><td>No necesidad (≠ prohibición)</td><td><em>You don't have to come if you don't want to.</em></td></tr>
+        <tr><td><strong>should / ought to</strong></td><td>Consejo, recomendación, obligación moral</td><td><em>You should see a doctor. You ought to apologise.</em></td></tr>
+        <tr><td><strong>shall</strong></td><td>Oferta, sugerencia (I/We), futuro formal</td><td><em>Shall I open the window? Shall we dance?</em></td></tr>
+        <tr><td><strong>would</strong></td><td>Hábito pasado, petición cortés, condicional, preferencia</td><td><em>Would you like some tea? I'd rather stay.</em></td></tr>
+        <tr><td><strong>need</strong></td><td>Necesidad (modal: need + bare inf. / lexical: need to)</td><td><em>You needn't worry. / I need to study.</em></td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Modals for deduction (present and past)</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Certeza / probabilidad</th><th>Presente</th><th>Pasado</th></tr>
+        <tr><td>Certeza positiva (~99%)</td><td><em>She must be at home.</em></td><td><em>She must have been at home.</em></td></tr>
+        <tr><td>Posibilidad (~50%)</td><td><em>He may/might be sleeping.</em></td><td><em>He may/might have been sleeping.</em></td></tr>
+        <tr><td>Certeza negativa</td><td><em>That can't be right.</em></td><td><em>That can't have been right.</em></td></tr>
+        <tr><td>Crítica a pasado</td><td>—</td><td><em>You should have told me. / You shouldn't have said that.</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ RELATIVE CLAUSES ══════════ -->
+  <section class="block" id="relative">
+    <div class="block-header">
+      <span class="block-label">Structures</span>
+      <h2>Relative Clauses</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Pronombre</th><th>Función</th><th>Defining</th><th>Non-defining</th></tr>
+        <tr><td><strong>who / that</strong></td><td>Personas (sujeto o CD)</td><td>✓</td><td>who (no that)</td></tr>
+        <tr><td><strong>which / that</strong></td><td>Cosas (sujeto o CD)</td><td>✓</td><td>which (no that)</td></tr>
+        <tr><td><strong>whose</strong></td><td>Posesión (personas y cosas)</td><td>✓</td><td>✓</td></tr>
+        <tr><td><strong>where</strong></td><td>Lugar</td><td>✓</td><td>✓</td></tr>
+        <tr><td><strong>when</strong></td><td>Tiempo</td><td>✓</td><td>✓</td></tr>
+        <tr><td><strong>why</strong></td><td>Razón</td><td>✓</td><td>✗</td></tr>
+      </table>
+    </div>
+
+    <div class="rule-box">
+      <div class="rule-title">Defining vs. Non-defining</div>
+      <strong>Defining (restrictiva):</strong> Identifica al antecedente. Sin comas. Se puede omitir el relativo si es CD: <em>The book (that) I read was great.</em><br>
+      <strong>Non-defining (explicativa):</strong> Añade información extra, no esencial. Con comas. No se puede omitir el relativo ni usar "that": <em>My sister, who lives in London, is a doctor.</em>
+    </div>
+
+    <div class="lang-example">
+      <span class="en">Defining: The man who/that called you is waiting outside. (identifica qué hombre)</span>
+    </div>
+    <div class="lang-example">
+      <span class="en">Non-defining: My father, who is 60, has just retired. (información adicional)</span>
+    </div>
+  </section>
+
+  <!-- ══════════ GERUNDS VS INFINITIVES ══════════ -->
+  <section class="block" id="gerunds">
+    <div class="block-header">
+      <span class="block-label">Structures</span>
+      <h2>Gerunds vs. Infinitives</h2>
+    </div>
+
+    <h3 class="sh">Verbs followed by gerund (-ing)</h3>
+    <div class="pill-row">
+      <span class="pill hi">enjoy</span><span class="pill hi">avoid</span><span class="pill hi">mind</span>
+      <span class="pill hi">finish</span><span class="pill hi">suggest</span><span class="pill hi">recommend</span>
+      <span class="pill hi">keep</span><span class="pill hi">admit</span><span class="pill hi">deny</span>
+      <span class="pill hi">miss</span><span class="pill hi">risk</span><span class="pill hi">consider</span>
+      <span class="pill hi">delay</span><span class="pill hi">imagine</span><span class="pill hi">practise</span>
+      <span class="pill hi">give up</span><span class="pill hi">can't help</span><span class="pill hi">look forward to</span>
+    </div>
+
+    <h3 class="sh">Verbs followed by infinitive (to + inf.)</h3>
+    <div class="pill-row">
+      <span class="pill hi">want</span><span class="pill hi">need</span><span class="pill hi">hope</span>
+      <span class="pill hi">decide</span><span class="pill hi">plan</span><span class="pill hi">promise</span>
+      <span class="pill hi">agree</span><span class="pill hi">refuse</span><span class="pill hi">offer</span>
+      <span class="pill hi">manage</span><span class="pill hi">fail</span><span class="pill hi">expect</span>
+      <span class="pill hi">tend</span><span class="pill hi">pretend</span><span class="pill hi">seem</span>
+      <span class="pill hi">afford</span><span class="pill hi">learn</span><span class="pill hi">threaten</span>
+    </div>
+
+    <h3 class="sh">Verbs with change of meaning</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Verb</th><th>+ Gerund</th><th>+ Infinitive</th></tr>
+        <tr><td><strong>remember</strong></td><td><em>I remember locking the door.</em> (recuerdo haberlo hecho)</td><td><em>Remember to lock the door.</em> (no olvides hacerlo)</td></tr>
+        <tr><td><strong>forget</strong></td><td><em>I'll never forget meeting her.</em> (olvidar que algo pasó)</td><td><em>I forgot to call him.</em> (olvidé hacer algo)</td></tr>
+        <tr><td><strong>stop</strong></td><td><em>He stopped smoking.</em> (dejar de fumar)</td><td><em>He stopped to smoke.</em> (paró para fumar)</td></tr>
+        <tr><td><strong>try</strong></td><td><em>Try adding more salt.</em> (intentar como experimento)</td><td><em>Try to finish by 5pm.</em> (esforzarse en conseguir)</td></tr>
+        <tr><td><strong>regret</strong></td><td><em>I regret telling him.</em> (lamentar algo ya hecho)</td><td><em>I regret to inform you…</em> (lamentar comunicar algo)</td></tr>
+        <tr><td><strong>mean</strong></td><td><em>This means working harder.</em> (suponer, implicar)</td><td><em>I mean to finish today.</em> (tener intención de)</td></tr>
+      </table>
+    </div>
+
+    <div class="ib key">
+      <strong>Gerund obligatorio</strong> tras: preposiciones (<em>interested in doing</em>), after/before/when (<em>after finishing</em>), expresiones (<em>it's worth doing, it's no use doing, there's no point doing</em>).<br>
+      <strong>Bare infinitive</strong> (sin to) tras: modals, <em>make/let/help sb do, would rather, had better</em>.
+    </div>
+  </section>
+
+  <!-- ══════════ ARTICLES ══════════ -->
+  <section class="block" id="articles">
+    <div class="block-header">
+      <span class="block-label">Grammar</span>
+      <h2>Articles</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Article</th><th>Use</th><th>Example</th></tr>
+        <tr>
+          <td rowspan="3"><strong>a / an</strong></td>
+          <td>Primera mención, nombrar algo por primera vez</td>
+          <td><em>I saw a dog in the park.</em></td>
+        </tr>
+        <tr>
+          <td>Profesiones y categorías</td>
+          <td><em>She is a doctor.</em></td>
+        </tr>
+        <tr>
+          <td>Uno de un grupo indeterminado</td>
+          <td><em>Can I borrow a pen?</em></td>
+        </tr>
+        <tr>
+          <td rowspan="4"><strong>the</strong></td>
+          <td>Segunda mención o referencia ya conocida</td>
+          <td><em>The dog I saw was huge.</em></td>
+        </tr>
+        <tr>
+          <td>Único en su clase</td>
+          <td><em>the sun, the moon, the internet</em></td>
+        </tr>
+        <tr>
+          <td>Con superlativos y números ordinales</td>
+          <td><em>the best, the first</em></td>
+        </tr>
+        <tr>
+          <td>Ríos, mares, montañas (rangos), países plurales</td>
+          <td><em>the Thames, the Alps, the USA</em></td>
+        </tr>
+        <tr>
+          <td rowspan="4"><strong>Ø (zero)</strong></td>
+          <td>Sustantivos incontables y plurales en general</td>
+          <td><em>I like coffee. Dogs are loyal.</em></td>
+        </tr>
+        <tr>
+          <td>Nombres propios, ciudades, países (mayoría)</td>
+          <td><em>Spain, Madrid, John</em></td>
+        </tr>
+        <tr>
+          <td>Comidas, idiomas, deportes</td>
+          <td><em>I had breakfast. She speaks French. He plays tennis.</em></td>
+        </tr>
+        <tr>
+          <td>Lugares cuando se usan para su función principal</td>
+          <td><em>go to school/church/hospital/bed/work</em></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ PREPOSITIONS ══════════ -->
+  <section class="block" id="prepositions">
+    <div class="block-header">
+      <span class="block-label">Grammar</span>
+      <h2>Prepositions of Time, Place and Movement</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Preposition</th><th>Time</th><th>Place</th></tr>
+        <tr>
+          <td><strong>at</strong></td>
+          <td>Horas exactas, festivos: <em>at 8pm, at Christmas, at noon, at night, at the weekend</em></td>
+          <td>Punto preciso: <em>at the door, at the top, at school, at home, at work</em></td>
+        </tr>
+        <tr>
+          <td><strong>in</strong></td>
+          <td>Meses, años, estaciones, períodos: <em>in May, in 2024, in winter, in the morning</em></td>
+          <td>Interior, ciudades, países, continentes: <em>in the box, in London, in Spain</em></td>
+        </tr>
+        <tr>
+          <td><strong>on</strong></td>
+          <td>Días y fechas: <em>on Monday, on 15th July, on my birthday</em></td>
+          <td>Superficie: <em>on the table, on the wall, on the floor</em></td>
+        </tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Common preposition combinations</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Adj. + prep.</th><th>Noun + prep.</th><th>Verb + prep.</th></tr>
+        <tr>
+          <td><em>afraid of · good at · interested in · proud of · responsible for · worried about · similar to · different from · keen on · tired of</em></td>
+          <td><em>advantage of · lack of · reason for · need for · effect on · attitude towards · relationship with</em></td>
+          <td><em>agree with · apologise for · apply for · believe in · consist of · depend on · result in · succeed in · suffer from · take part in</em></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ PHRASAL VERBS ══════════ -->
+  <section class="block" id="phrasal">
+    <div class="block-header">
+      <span class="block-label">Grammar</span>
+      <h2>Phrasal Verbs</h2>
+    </div>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Phrasal verb</th><th>Meaning</th><th>Example</th></tr>
+        <tr><td>break down</td><td>averiarse / venirse abajo</td><td><em>The car broke down on the motorway.</em></td></tr>
+        <tr><td>break up (with)</td><td>terminar una relación</td><td><em>She broke up with her boyfriend.</em></td></tr>
+        <tr><td>bring up</td><td>criar / mencionar</td><td><em>She was brought up by her grandparents.</em></td></tr>
+        <tr><td>call off</td><td>cancelar</td><td><em>They called off the meeting.</em></td></tr>
+        <tr><td>carry out</td><td>llevar a cabo</td><td><em>Scientists carried out an experiment.</em></td></tr>
+        <tr><td>come across</td><td>encontrarse con algo por casualidad</td><td><em>I came across an old photo.</em></td></tr>
+        <tr><td>deal with</td><td>tratar con / ocuparse de</td><td><em>You need to deal with this problem.</em></td></tr>
+        <tr><td>fall out (with)</td><td>pelearse (con alguien)</td><td><em>She fell out with her flatmate.</em></td></tr>
+        <tr><td>find out</td><td>descubrir / enterarse</td><td><em>I need to find out what happened.</em></td></tr>
+        <tr><td>get along (with)</td><td>llevarse bien</td><td><em>I get along well with my colleagues.</em></td></tr>
+        <tr><td>give up</td><td>rendirse / dejar de</td><td><em>He gave up smoking last year.</em></td></tr>
+        <tr><td>look after</td><td>cuidar</td><td><em>Can you look after my cat?</em></td></tr>
+        <tr><td>look into</td><td>investigar</td><td><em>Police are looking into the matter.</em></td></tr>
+        <tr><td>look up</td><td>buscar (información)</td><td><em>Look it up in the dictionary.</em></td></tr>
+        <tr><td>make up</td><td>inventarse / reconciliarse / maquillarse</td><td><em>She made up a story. They made up.</em></td></tr>
+        <tr><td>put off</td><td>posponer / disuadir</td><td><em>Don't put off studying until tomorrow.</em></td></tr>
+        <tr><td>run out of</td><td>quedarse sin</td><td><em>We've run out of milk.</em></td></tr>
+        <tr><td>set up</td><td>establecer / montar</td><td><em>They set up a new company.</em></td></tr>
+        <tr><td>take after</td><td>parecerse a</td><td><em>She takes after her mother.</em></td></tr>
+        <tr><td>turn down</td><td>rechazar / bajar el volumen</td><td><em>He turned down the job offer.</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ CONNECTORS ══════════ -->
+  <section class="block" id="connectors">
+    <div class="block-header">
+      <span class="block-label">Grammar</span>
+      <h2>Connectors and Discourse Markers</h2>
+    </div>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Function</th><th>Connectors</th></tr>
+        <tr><td><strong>Addition</strong></td><td>furthermore, moreover, in addition, besides, what is more, also, not only… but also</td></tr>
+        <tr><td><strong>Contrast</strong></td><td>however, nevertheless, nonetheless, on the other hand, yet, although, even though, despite, in spite of, whereas, while</td></tr>
+        <tr><td><strong>Cause</strong></td><td>because, since, as, due to, owing to, because of, as a result of</td></tr>
+        <tr><td><strong>Effect/Result</strong></td><td>therefore, thus, hence, consequently, as a result, so, that is why</td></tr>
+        <tr><td><strong>Purpose</strong></td><td>in order to, so as to, so that, to</td></tr>
+        <tr><td><strong>Condition</strong></td><td>if, unless, provided (that), as long as, on condition that</td></tr>
+        <tr><td><strong>Concession</strong></td><td>although, even though, even if, despite, in spite of, while, whereas</td></tr>
+        <tr><td><strong>Example</strong></td><td>for example, for instance, such as, including, namely, in particular</td></tr>
+        <tr><td><strong>Emphasis</strong></td><td>in fact, indeed, clearly, obviously, above all, particularly, especially</td></tr>
+        <tr><td><strong>Sequence</strong></td><td>first(ly), second(ly), then, next, after that, finally, subsequently, eventually</td></tr>
+        <tr><td><strong>Summary/Conclusion</strong></td><td>in conclusion, to sum up, to conclude, in summary, all in all, on balance, overall</td></tr>
+      </table>
+    </div>
+    <div class="ib warn">
+      <strong>Uso correcto:</strong> <em>despite / in spite of</em> + noun/-ing (no + clause). <em>although / even though</em> + clause (subject + verb). <em>"Despite of"</em> ✗ nunca.
+    </div>
+  </section>
+
+  <!-- ══════════ ESSAY WRITING ══════════ -->
+  <section class="block" id="essay">
+    <div class="block-header">
+      <span class="block-label">Writing</span>
+      <h2>Essay Writing</h2>
+    </div>
+
+    <h3 class="sh">For and Against Essay</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Paragraph</th><th>Content</th><th>Useful phrases</th></tr>
+        <tr><td><strong>Introduction</strong></td><td>Introduce the topic neutrally. State the debate.</td><td><em>There is currently much debate about… / The issue of … has become increasingly important…</em></td></tr>
+        <tr><td><strong>Arguments for</strong></td><td>2–3 points in favour with support/examples</td><td><em>One of the main advantages is… / It is often argued that… / Supporters claim that…</em></td></tr>
+        <tr><td><strong>Arguments against</strong></td><td>2–3 points against with support/examples</td><td><em>On the other hand… / Critics argue that… / One major drawback is… / Nevertheless…</em></td></tr>
+        <tr><td><strong>Conclusion</strong></td><td>Balanced summary or personal stance</td><td><em>Taking everything into account… / On balance… / To conclude… / In my view…</em></td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Opinion Essay</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Paragraph</th><th>Content</th></tr>
+        <tr><td><strong>Introduction</strong></td><td>State topic and your opinion clearly. <em>In my opinion… / I strongly believe that… / It is my view that…</em></td></tr>
+        <tr><td><strong>Body paragraphs</strong></td><td>Each paragraph = one main argument + example/evidence. <em>First and foremost… / Another key point is… / Furthermore…</em></td></tr>
+        <tr><td><strong>Counter-argument</strong></td><td>Acknowledge and refute the opposite view. <em>Although some people argue that… I believe… / While it is true that… nevertheless…</em></td></tr>
+        <tr><td><strong>Conclusion</strong></td><td>Restate opinion, summary. <em>In conclusion, I firmly believe that… / All things considered…</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ FORMAL LETTER ══════════ -->
+  <section class="block" id="letter">
+    <div class="block-header">
+      <span class="block-label">Writing</span>
+      <h2>Formal Letter / Email</h2>
+    </div>
+
+    <div class="rule-box">
+      <div class="rule-title">Structure of a formal letter</div>
+      <strong>Salutation:</strong> Dear Mr/Ms/Dr [Surname], / Dear Sir or Madam, (si no sabes el nombre)<br>
+      <strong>Opening:</strong> I am writing to… / I am writing with regard to… / I am writing in response to…<br>
+      <strong>Body:</strong> Clearly structured paragraphs. One idea per paragraph.<br>
+      <strong>Closing request:</strong> I would be grateful if you could… / I look forward to hearing from you.<br>
+      <strong>Sign-off:</strong> Yours sincerely, (si sabes el nombre) / Yours faithfully, (si no sabes el nombre) + Full name.
+    </div>
+
+    <h3 class="sh">Useful phrases by function</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Function</th><th>Phrases</th></tr>
+        <tr><td>Stating purpose</td><td><em>I am writing to enquire about… / to complain about… / to apply for… / to inform you that…</em></td></tr>
+        <tr><td>Referring to previous contact</td><td><em>Further to your advertisement… / Following our telephone conversation… / With reference to…</em></td></tr>
+        <tr><td>Making a request</td><td><em>I would be grateful if you could… / Could you please… / I would appreciate it if…</em></td></tr>
+        <tr><td>Giving information</td><td><em>I would like to point out that… / Please note that… / I am pleased to inform you that…</em></td></tr>
+        <tr><td>Complaining</td><td><em>I am writing to express my dissatisfaction with… / I was extremely disappointed to find that…</em></td></tr>
+        <tr><td>Apologising</td><td><em>We apologise for any inconvenience caused. / Please accept our sincerest apologies for…</em></td></tr>
+        <tr><td>Closing</td><td><em>I look forward to receiving your reply. / I look forward to hearing from you at your earliest convenience.</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ VOCABULARY ══════════ -->
+  <section class="block" id="vocabulary">
+    <div class="block-header">
+      <span class="block-label">Writing</span>
+      <h2>Vocabulary by Topic (UNED)</h2>
+    </div>
+
+    <h3 class="sh">Environment & Climate Change</h3>
+    <div class="pill-row">
+      <span class="pill">global warming</span><span class="pill">climate change</span><span class="pill">greenhouse gas</span>
+      <span class="pill">carbon footprint</span><span class="pill">renewable energy</span><span class="pill">fossil fuels</span>
+      <span class="pill">deforestation</span><span class="pill">biodiversity</span><span class="pill">sustainable development</span>
+      <span class="pill">emissions</span><span class="pill">recycling</span><span class="pill">wildlife conservation</span>
+    </div>
+
+    <h3 class="sh">Technology & Society</h3>
+    <div class="pill-row">
+      <span class="pill">artificial intelligence</span><span class="pill">social media</span><span class="pill">cybersecurity</span>
+      <span class="pill">digital divide</span><span class="pill">algorithm</span><span class="pill">automation</span>
+      <span class="pill">privacy</span><span class="pill">surveillance</span><span class="pill">innovation</span>
+      <span class="pill">remote working</span><span class="pill">e-commerce</span><span class="pill">misinformation</span>
+    </div>
+
+    <h3 class="sh">Health & Medicine</h3>
+    <div class="pill-row">
+      <span class="pill">mental health</span><span class="pill">wellbeing</span><span class="pill">obesity</span>
+      <span class="pill">vaccination</span><span class="pill">healthcare system</span><span class="pill">pandemic</span>
+      <span class="pill">sedentary lifestyle</span><span class="pill">life expectancy</span><span class="pill">chronic disease</span>
+    </div>
+
+    <h3 class="sh">Education & Work</h3>
+    <div class="pill-row">
+      <span class="pill">lifelong learning</span><span class="pill">vocational training</span><span class="pill">gap year</span>
+      <span class="pill">tuition fees</span><span class="pill">unemployment</span><span class="pill">work-life balance</span>
+      <span class="pill">internship</span><span class="pill">entrepreneurship</span><span class="pill">skills gap</span>
+    </div>
+
+    <h3 class="sh">Word Formation</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Process</th><th>Suffixes / Prefixes</th><th>Examples</th></tr>
+        <tr><td><strong>Noun from verb</strong></td><td>-tion/-sion, -ment, -ance/-ence, -ing, -er/-or</td><td>educate→education, achieve→achievement, depend→dependence</td></tr>
+        <tr><td><strong>Noun from adj.</strong></td><td>-ness, -ty/-ity, -ce</td><td>happy→happiness, creative→creativity</td></tr>
+        <tr><td><strong>Adj. from noun</strong></td><td>-al, -ful, -less, -ous, -ic, -ive, -able/-ible</td><td>nature→natural, use→useful/useless, fame→famous</td></tr>
+        <tr><td><strong>Negative prefixes</strong></td><td>un-, in-/im-/ir-/il-, dis-, mis-</td><td>unhappy, impossible, irresponsible, misunderstand</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <div class="page-footer">
+    INGLÉS · UNED 2026 · <a href="index.html" style="color:var(--muted)">← Volver al inicio</a>
+  </div>
+
+</main>
+</div>
+
+<script>
+const sections = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.sb-link');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.sb-link[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { rootMargin: `-${56+16}px 0px -60% 0px`, threshold: 0 });
+sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>

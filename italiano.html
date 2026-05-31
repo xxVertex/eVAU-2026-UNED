@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italiano — EvAU 2026 · UNED</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  /* Extra styles for language pages */
+  .lang-example {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 18px;
+    margin: 10px 0;
+    font-size: 0.88rem;
+  }
+  .lang-example .it {
+    color: var(--accent);
+    font-style: italic;
+    display: block;
+    margin-bottom: 3px;
+  }
+  .lang-example .es {
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .conj-table th { min-width: 90px; }
+  .conj-table td { font-size: 0.82rem; line-height: 1.4; }
+  .conj-table .pronoun { color: var(--muted); font-size: 0.75rem; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0; }
+  .pill {
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+  .pill.hi { border-color: var(--accent); color: var(--accent); background: color-mix(in srgb, var(--accent) 10%, var(--surface2)); }
+  .rule-box {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 14px 18px;
+    margin: 12px 0;
+    font-size: 0.875rem;
+  }
+  .rule-box .rule-title {
+    font-family: var(--font-mono);
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+</style>
+</head>
+<body data-subject="ita">
+
+<header class="topbar">
+  <div class="topbar-logo">e<span>V</span>AU <span>2026</span></div>
+  <nav class="topbar-nav">
+    <a href="index.html">Inicio</a>
+    <a href="fisica.html" class="fisica">Física</a>
+    <a href="matematicas-ii.html" class="mat2">Matemáticas II</a>
+    <a href="matematicas-ccss.html" class="matcc">Matemáticas CCSS</a>
+    <a href="italiano.html" class="ita active">Italiano</a>
+    <a href="ingles.html" class="eng">Inglés</a>
+  </nav>
+  <span class="topbar-tag">Italiano</span>
+</header>
+
+<div class="page-layout">
+
+<nav class="sidebar">
+  <div class="sb-section">
+    <div class="sb-heading">Morfología</div>
+    <a href="#articoli" class="sb-link">Articoli</a>
+    <a href="#nomi" class="sb-link">Nomi e aggettivi</a>
+    <a href="#pronomi" class="sb-link">Pronomi personali</a>
+    <a href="#pronomi-diretti" class="sb-link">Pronomi diretti</a>
+    <a href="#pronomi-indiretti" class="sb-link">Pronomi indiretti</a>
+    <a href="#pronomi-combinati" class="sb-link">Pronomi combinati</a>
+    <a href="#pronomi-relativi" class="sb-link">Pronomi relativi</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Tempi verbali</div>
+    <a href="#presente" class="sb-link">Presente indicativo</a>
+    <a href="#passato-prossimo" class="sb-link">Passato prossimo</a>
+    <a href="#imperfetto" class="sb-link">Imperfetto</a>
+    <a href="#trapassato" class="sb-link">Trapassato prossimo</a>
+    <a href="#futuro" class="sb-link">Futuro</a>
+    <a href="#condizionale" class="sb-link">Condizionale</a>
+    <a href="#congiuntivo" class="sb-link">Congiuntivo</a>
+    <a href="#imperativo" class="sb-link">Imperativo</a>
+  </div>
+  <div class="sb-section">
+    <div class="sb-heading">Strutture</div>
+    <a href="#passivo" class="sb-link">Forma passiva</a>
+    <a href="#discorso-indiretto" class="sb-link">Discorso indiretto</a>
+    <a href="#periodo-ipotetico" class="sb-link">Periodo ipotetico</a>
+    <a href="#connettivi" class="sb-link">Connettivi</a>
+    <a href="#preposizioni" class="sb-link">Preposizioni</a>
+    <a href="#produzione" class="sb-link">Produzione scritta</a>
+  </div>
+</nav>
+
+<main class="page-main">
+
+  <div class="page-hero">
+    <div class="kicker">UNED · Apuntes completos · 2026</div>
+    <h1>Italiano</h1>
+    <p class="desc">Grammatica italiana completa: morfología, todos los tiempos verbales, estructuras clave y producción escrita según el currículo UNED.</p>
+    <div class="hero-tags">
+      <span class="htag">Grammatica</span>
+      <span class="htag">Verbi</span>
+      <span class="htag">Pronomi</span>
+      <span class="htag">Congiuntivo</span>
+      <span class="htag">Scrittura</span>
+    </div>
+  </div>
+
+  <!-- ══════════ ARTICOLI ══════════ -->
+  <section class="block" id="articoli">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Articoli</h2>
+    </div>
+
+    <h3 class="sh">Articoli determinativi (el / la / los / las)</h3>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th></th><th>Masc. singular</th><th>Masc. plural</th><th>Fem. singular</th><th>Fem. plural</th></tr>
+        <tr><td><strong>Uso general</strong></td><td>il</td><td>i</td><td>la</td><td>le</td></tr>
+        <tr><td><strong>Ante vocal</strong></td><td>l'</td><td>gli</td><td>l'</td><td>le</td></tr>
+        <tr><td><strong>Ante s+cons, z, gn, ps…</strong></td><td>lo</td><td>gli</td><td>—</td><td>—</td></tr>
+      </table>
+    </div>
+    <div class="lang-example">
+      <span class="it">il libro, i libri / lo studente, gli studenti / l'amico, gli amici / la casa, le case / l'amica, le amiche</span>
+    </div>
+
+    <h3 class="sh">Articoli indeterminativi (un / una)</h3>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th></th><th>Masc. singular</th><th>Fem. singular</th></tr>
+        <tr><td><strong>General</strong></td><td>un</td><td>una</td></tr>
+        <tr><td><strong>Ante vocal (fem.)</strong></td><td>—</td><td>un'</td></tr>
+        <tr><td><strong>Ante s+cons, z, gn…</strong></td><td>uno</td><td>—</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Articoli partitivi (del / della / dei…)</h3>
+    <p>Se forman con <strong>di + articolo determinativo</strong>. Equivalen a "un poco de" o "algunos/algunas".</p>
+    <div class="pill-row">
+      <span class="pill hi">del (di+il)</span><span class="pill hi">dello (di+lo)</span><span class="pill hi">dell' (di+l')</span>
+      <span class="pill hi">della (di+la)</span><span class="pill hi">dei (di+i)</span><span class="pill hi">degli (di+gli)</span><span class="pill hi">delle (di+le)</span>
+    </div>
+    <div class="lang-example">
+      <span class="it">Bevo del caffè. Ho comprato delle mele. Vuoi dello zucchero?</span>
+      <span class="es">Bebo (algo de) café. He comprado (algunas) manzanas. ¿Quieres (algo de) azúcar?</span>
+    </div>
+  </section>
+
+  <!-- ══════════ NOMI ══════════ -->
+  <section class="block" id="nomi">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Nomi e Aggettivi</h2>
+    </div>
+
+    <h3 class="sh">Genere e numero dei nomi</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Terminación sg.</th><th>Género</th><th>Plural</th><th>Ejemplo</th></tr>
+        <tr><td>-o</td><td>Masc. (general)</td><td>-i</td><td>libro → libri</td></tr>
+        <tr><td>-a</td><td>Fem. (general)</td><td>-e</td><td>casa → case</td></tr>
+        <tr><td>-e</td><td>Masc. o fem.</td><td>-i</td><td>fiore → fiori / notte → notti</td></tr>
+        <tr><td>-ista</td><td>Masc. y fem.</td><td>-isti / -iste</td><td>artista → artisti / artiste</td></tr>
+        <tr><td>-zione / -sione</td><td>Fem.</td><td>-zioni / -sioni</td><td>nazione → nazioni</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Aggettivi qualificativi</h3>
+    <div class="rule-box">
+      <div class="rule-title">Concordancia</div>
+      Los adjetivos concuerdan en género y número con el nombre que modifican. Tipo 1: -o/-a/-i/-e. Tipo 2: -e (masc. y fem.) → -i en plural.
+    </div>
+
+    <h3 class="sh">Comparativi e superlativi</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Grado</th><th>Estructura</th><th>Ejemplo</th></tr>
+        <tr><td>Comparativo de superioridad</td><td>più + adj + di/che</td><td><em>Roma è più grande di Milano.</em></td></tr>
+        <tr><td>Comparativo de igualdad</td><td>(così) adj + come / (tanto) adj + quanto</td><td><em>È (così) alto come suo fratello.</em></td></tr>
+        <tr><td>Comparativo de inferioridad</td><td>meno + adj + di/che</td><td><em>È meno caro di quello.</em></td></tr>
+        <tr><td>Superlativo relativo</td><td>il/la più + adj + di</td><td><em>È la città più bella d'Italia.</em></td></tr>
+        <tr><td>Superlativo absoluto</td><td>adj + -issimo/a</td><td><em>buonissimo, bellissima</em></td></tr>
+      </table>
+    </div>
+    <div class="ib tip">
+      <strong>Irregolari:</strong> buono → migliore / ottimo · cattivo → peggiore / pessimo · grande → maggiore / massimo · piccolo → minore / minimo
+    </div>
+  </section>
+
+  <!-- ══════════ PRONOMI PERSONALI ══════════ -->
+  <section class="block" id="pronomi">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Pronomi Personali Soggetto</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th>Persona</th><th>Singular</th><th>Plural</th></tr>
+        <tr><td>1ª</td><td>io</td><td>noi</td></tr>
+        <tr><td>2ª</td><td>tu</td><td>voi</td></tr>
+        <tr><td>3ª masc.</td><td>lui / egli</td><td>loro / essi</td></tr>
+        <tr><td>3ª fem.</td><td>lei / ella</td><td>loro / esse</td></tr>
+        <tr><td>Forma cortés</td><td>Lei (sg.)</td><td>Loro (pl., formal)</td></tr>
+      </table>
+    </div>
+    <div class="ib key">
+      En italiano el sujeto pronombre normalmente <strong>se omite</strong> porque la desinencia verbal ya indica la persona. Se usa para énfasis o contraste: <em>Io studio, tu no.</em>
+    </div>
+  </section>
+
+  <!-- ══════════ PRONOMI DIRETTI ══════════ -->
+  <section class="block" id="pronomi-diretti">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Pronomi Diretti (CD)</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th>Persona</th><th>Forma tónica</th><th>Forma átona (procl.)</th></tr>
+        <tr><td>1ª sg.</td><td>me</td><td>mi</td></tr>
+        <tr><td>2ª sg.</td><td>te</td><td>ti</td></tr>
+        <tr><td>3ª sg. masc.</td><td>lui</td><td>lo</td></tr>
+        <tr><td>3ª sg. fem.</td><td>lei</td><td>la</td></tr>
+        <tr><td>1ª pl.</td><td>noi</td><td>ci</td></tr>
+        <tr><td>2ª pl.</td><td>voi</td><td>vi</td></tr>
+        <tr><td>3ª pl. masc.</td><td>loro</td><td>li</td></tr>
+        <tr><td>3ª pl. fem.</td><td>loro</td><td>le</td></tr>
+      </table>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Posición</div>
+      Van <strong>antes del verbo conjugado</strong>: <em>Lo vedo.</em> — Con infinitivo, gerundio e imperativo afirmativo: van <strong>después y unidos</strong>: <em>Voglio vederlo. Vedendolo. Vedilo!</em>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Acuerdo del participio passato con i pronomi diretti</div>
+      Con i pronomi diretti di 3ª persona (lo, la, li, le) y <em>mi, ti, ci, vi</em> en ciertos contextos, el participio concuerda: <em>Ho visto Maria → L'ho vista.</em> / <em>Ho comprato i libri → Li ho comprati.</em>
+    </div>
+    <div class="lang-example">
+      <span class="it">Compro il libro. → Lo compro. / Chiamo le ragazze. → Le chiamo.</span>
+      <span class="es">Compro el libro. → Lo compro. / Llamo a las chicas. → Las llamo.</span>
+    </div>
+  </section>
+
+  <!-- ══════════ PRONOMI INDIRETTI ══════════ -->
+  <section class="block" id="pronomi-indiretti">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Pronomi Indiretti (CI)</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th>Persona</th><th>Forma átona</th><th>Forma tónica</th></tr>
+        <tr><td>1ª sg.</td><td>mi</td><td>a me</td></tr>
+        <tr><td>2ª sg.</td><td>ti</td><td>a te</td></tr>
+        <tr><td>3ª sg. masc./fem.</td><td>gli / le</td><td>a lui / a lei</td></tr>
+        <tr><td>3ª sg. cortés</td><td>Le</td><td>a Lei</td></tr>
+        <tr><td>1ª pl.</td><td>ci</td><td>a noi</td></tr>
+        <tr><td>2ª pl.</td><td>vi</td><td>a voi</td></tr>
+        <tr><td>3ª pl.</td><td>gli (loro)</td><td>a loro</td></tr>
+      </table>
+    </div>
+    <div class="lang-example">
+      <span class="it">Scrivo a Marco. → Gli scrivo. / Telefono alla professoressa. → Le telefono.</span>
+      <span class="es">Le escribo a Marco. / Le telefoneo a la profesora.</span>
+    </div>
+  </section>
+
+  <!-- ══════════ PRONOMI COMBINATI ══════════ -->
+  <section class="block" id="pronomi-combinati">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Pronomi Combinati (CI + CD)</h2>
+    </div>
+
+    <p>Cuando aparecen juntos un pronombre indirecto y uno directo, el <strong>CI va primero</strong> y cambia de forma. La i de mi/ti/ci/vi se convierte en e: me, te, ce, ve.</p>
+
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th>CI \ CD →</th><th>lo</th><th>la</th><th>li</th><th>le</th><th>ne</th></tr>
+        <tr><td><strong>mi →</strong></td><td>me lo</td><td>me la</td><td>me li</td><td>me le</td><td>me ne</td></tr>
+        <tr><td><strong>ti →</strong></td><td>te lo</td><td>te la</td><td>te li</td><td>te le</td><td>te ne</td></tr>
+        <tr><td><strong>gli / le →</strong></td><td>glielo</td><td>gliela</td><td>glieli</td><td>gliele</td><td>gliene</td></tr>
+        <tr><td><strong>ci →</strong></td><td>ce lo</td><td>ce la</td><td>ce li</td><td>ce le</td><td>ce ne</td></tr>
+        <tr><td><strong>vi →</strong></td><td>ve lo</td><td>ve la</td><td>ve li</td><td>ve le</td><td>ve ne</td></tr>
+        <tr><td><strong>gli (loro) →</strong></td><td>glielo</td><td>gliela</td><td>glieli</td><td>gliele</td><td>gliene</td></tr>
+      </table>
+    </div>
+    <div class="lang-example">
+      <span class="it">Ti mando il libro. → Te lo mando. / Gli do le chiavi. → Gliele do.</span>
+      <span class="es">Te mando el libro. / Le doy las llaves.</span>
+    </div>
+
+    <h3 class="sh">Pronomi CI e NE</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Pronombre</th><th>Usos principales</th><th>Ejemplo</th></tr>
+        <tr><td><strong>ci</strong></td><td>Lugar (= allí, aquí) / con "essere" → esserci</td><td><em>Ci vado domani. C'è un problema.</em></td></tr>
+        <tr><td><strong>ne</strong></td><td>Partitivo ("de eso/eso") / cantidad / lugar de origen</td><td><em>Ne ho tre. Ne vengo. Ne parla spesso.</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ PRONOMI RELATIVI ══════════ -->
+  <section class="block" id="pronomi-relativi">
+    <div class="block-header">
+      <span class="block-label">Morfología</span>
+      <h2>Pronomi Relativi</h2>
+    </div>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Pronombre</th><th>Función</th><th>Ejemplo</th></tr>
+        <tr><td><strong>che</strong></td><td>Sujeto o CD (personas y cosas)</td><td><em>Il libro che leggo è interessante.</em></td></tr>
+        <tr><td><strong>cui</strong></td><td>Tras preposición (CI, CC…)</td><td><em>La persona a cui parlo è simpatica.</em></td></tr>
+        <tr><td><strong>il quale / la quale…</strong></td><td>Variante formal de che/cui (concuerda)</td><td><em>Il ragazzo con il quale studio.</em></td></tr>
+        <tr><td><strong>chi</strong></td><td>"Quien / el que" (sin antecedente)</td><td><em>Chi studia ottiene buoni risultati.</em></td></tr>
+        <tr><td><strong>quello che / ciò che</strong></td><td>"Lo que" (neutro)</td><td><em>Quello che dici è vero.</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ PRESENTE ══════════ -->
+  <section class="block" id="presente">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Presente Indicativo</h2>
+    </div>
+
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE (parlare)</th><th>-ERE (leggere)</th><th>-IRE tipo 1 (dormire)</th><th>-IRE tipo 2 -isc- (finire)</th></tr>
+        <tr><td class="pronoun">io</td><td>parlo</td><td>leggo</td><td>dormo</td><td>fin<strong>isc</strong>o</td></tr>
+        <tr><td class="pronoun">tu</td><td>parli</td><td>leggi</td><td>dormi</td><td>fin<strong>isc</strong>i</td></tr>
+        <tr><td class="pronoun">lui/lei</td><td>parla</td><td>legge</td><td>dorme</td><td>fin<strong>isc</strong>e</td></tr>
+        <tr><td class="pronoun">noi</td><td>parliamo</td><td>leggiamo</td><td>dormiamo</td><td>finiamo</td></tr>
+        <tr><td class="pronoun">voi</td><td>parlate</td><td>leggete</td><td>dormite</td><td>finite</td></tr>
+        <tr><td class="pronoun">loro</td><td>parlano</td><td>leggono</td><td>dormono</td><td>fin<strong>isc</strong>ono</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Verbi ausiliari: essere e avere</h3>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>essere</th><th>avere</th></tr>
+        <tr><td class="pronoun">io</td><td>sono</td><td>ho</td></tr>
+        <tr><td class="pronoun">tu</td><td>sei</td><td>hai</td></tr>
+        <tr><td class="pronoun">lui/lei</td><td>è</td><td>ha</td></tr>
+        <tr><td class="pronoun">noi</td><td>siamo</td><td>abbiamo</td></tr>
+        <tr><td class="pronoun">voi</td><td>siete</td><td>avete</td></tr>
+        <tr><td class="pronoun">loro</td><td>sono</td><td>hanno</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Verbi irregolari frequenti al presente</h3>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th>Infinito</th><th>io</th><th>tu</th><th>lui/lei</th><th>noi</th><th>voi</th><th>loro</th></tr>
+        <tr><td>andare</td><td>vado</td><td>vai</td><td>va</td><td>andiamo</td><td>andate</td><td>vanno</td></tr>
+        <tr><td>fare</td><td>faccio</td><td>fai</td><td>fa</td><td>facciamo</td><td>fate</td><td>fanno</td></tr>
+        <tr><td>dare</td><td>do</td><td>dai</td><td>dà</td><td>diamo</td><td>date</td><td>danno</td></tr>
+        <tr><td>stare</td><td>sto</td><td>stai</td><td>sta</td><td>stiamo</td><td>state</td><td>stanno</td></tr>
+        <tr><td>dire</td><td>dico</td><td>dici</td><td>dice</td><td>diciamo</td><td>dite</td><td>dicono</td></tr>
+        <tr><td>venire</td><td>vengo</td><td>vieni</td><td>viene</td><td>veniamo</td><td>venite</td><td>vengono</td></tr>
+        <tr><td>uscire</td><td>esco</td><td>esci</td><td>esce</td><td>usciamo</td><td>uscite</td><td>escono</td></tr>
+        <tr><td>potere</td><td>posso</td><td>puoi</td><td>può</td><td>possiamo</td><td>potete</td><td>possono</td></tr>
+        <tr><td>volere</td><td>voglio</td><td>vuoi</td><td>vuole</td><td>vogliamo</td><td>volete</td><td>vogliono</td></tr>
+        <tr><td>dovere</td><td>devo</td><td>devi</td><td>deve</td><td>dobbiamo</td><td>dovete</td><td>devono</td></tr>
+        <tr><td>sapere</td><td>so</td><td>sai</td><td>sa</td><td>sappiamo</td><td>sapete</td><td>sanno</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ PASSATO PROSSIMO ══════════ -->
+  <section class="block" id="passato-prossimo">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Passato Prossimo</h2>
+    </div>
+    <p>Equivale al pretérito perfecto compuesto español. Se usa para acciones pasadas con relevancia en el presente o en registros formales del norte de Italia.</p>
+
+    <div class="rule-box">
+      <div class="rule-title">Formazione: ausiliare (presente) + participio passato</div>
+      <strong>avere</strong> + pp. → verbos transitivos (ho parlato, hai letto…)<br>
+      <strong>essere</strong> + pp. → verbos intransitivos de movimiento/estado, reflexivos, tutti i verbi con "si". El pp. concuerda en género y número con el sujeto.
+    </div>
+
+    <div class="t-wrap">
+      <table>
+        <tr><th>Con AVERE</th><th>Con ESSERE (pp. concuerda)</th></tr>
+        <tr><td>ho parlato, hai letto, ha scritto…</td><td>sono andato/a, sei uscito/a, è arrivato/a…</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Participio passato</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Conjugación</th><th>Terminación regular</th><th>Ejemplos irregulares comunes</th></tr>
+        <tr><td>-are</td><td>-ato</td><td>fare → fatto · dare → dato · stare → stato</td></tr>
+        <tr><td>-ere</td><td>-uto</td><td>vedere → visto · leggere → letto · scrivere → scritto · mettere → messo · prendere → preso · rispondere → risposto · chiedere → chiesto · chiudere → chiuso · aprire → aperto · dire → detto · essere → stato</td></tr>
+        <tr><td>-ire</td><td>-ito</td><td>venire → venuto · morire → morto</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Verbi che richiedono ESSERE</h3>
+    <div class="pill-row">
+      <span class="pill hi">andare</span><span class="pill hi">venire</span><span class="pill hi">partire</span>
+      <span class="pill hi">arrivare</span><span class="pill hi">entrare</span><span class="pill hi">uscire</span>
+      <span class="pill hi">tornare</span><span class="pill hi">restare</span><span class="pill hi">stare</span>
+      <span class="pill hi">essere</span><span class="pill hi">diventare</span><span class="pill hi">nascere</span>
+      <span class="pill hi">morire</span><span class="pill hi">cadere</span><span class="pill hi">salire</span>
+      <span class="pill hi">scendere</span><span class="pill">tutti i riflessivi</span>
+    </div>
+  </section>
+
+  <!-- ══════════ IMPERFETTO ══════════ -->
+  <section class="block" id="imperfetto">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Imperfetto</h2>
+    </div>
+    <p>Equivale al pretérito imperfecto. Expresa: acciones habituales en el pasado, descripciones, estados de ánimo, dos acciones simultáneas.</p>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE (parlare)</th><th>-ERE (leggere)</th><th>-IRE (dormire)</th><th>essere</th></tr>
+        <tr><td class="pronoun">io</td><td>parlavo</td><td>leggevo</td><td>dormivo</td><td>ero</td></tr>
+        <tr><td class="pronoun">tu</td><td>parlavi</td><td>leggevi</td><td>dormivi</td><td>eri</td></tr>
+        <tr><td class="pronoun">lui/lei</td><td>parlava</td><td>leggeva</td><td>dormiva</td><td>era</td></tr>
+        <tr><td class="pronoun">noi</td><td>parlavamo</td><td>leggevamo</td><td>dormivamo</td><td>eravamo</td></tr>
+        <tr><td class="pronoun">voi</td><td>parlavate</td><td>leggevate</td><td>dormivate</td><td>eravate</td></tr>
+        <tr><td class="pronoun">loro</td><td>parlavano</td><td>leggevano</td><td>dormivano</td><td>erano</td></tr>
+      </table>
+    </div>
+    <div class="ib key">
+      <strong>Passato prossimo vs. Imperfetto:</strong>
+      <p>Passato prossimo → acción puntual, completa, limitada en el tiempo: <em>Ieri ho mangiato la pizza.</em></p>
+      <p>Imperfetto → acción habitual, descriptiva o de fondo: <em>Da bambino mangiavo sempre la pizza.</em></p>
+      <p>Juntos: imperfetto = fondo / passato prossimo = acción que interrumpe: <em>Leggevo quando è arrivato Marco.</em></p>
+    </div>
+  </section>
+
+  <!-- ══════════ TRAPASSATO ══════════ -->
+  <section class="block" id="trapassato">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Trapassato Prossimo</h2>
+    </div>
+    <p>Equivale al pretérito pluscuamperfecto. Acción pasada anterior a otra acción pasada.</p>
+    <div class="rule-box">
+      <div class="rule-title">Formazione</div>
+      <strong>avere/essere en imperfetto</strong> + participio passato<br>
+      <em>avevo parlato / ero andato/a</em>
+    </div>
+    <div class="lang-example">
+      <span class="it">Quando sono arrivato, Marco era già partito. (= Marco se había ido ya cuando llegué.)</span>
+      <span class="es">Cuando llegué, Marco ya se había ido.</span>
+    </div>
+  </section>
+
+  <!-- ══════════ FUTURO ══════════ -->
+  <section class="block" id="futuro">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Futuro Semplice e Anteriore</h2>
+    </div>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE (parlare)</th><th>-ERE (leggere)</th><th>-IRE (dormire)</th></tr>
+        <tr><td class="pronoun">io</td><td>parler<strong>ò</strong></td><td>legger<strong>ò</strong></td><td>dormir<strong>ò</strong></td></tr>
+        <tr><td class="pronoun">tu</td><td>parler<strong>ai</strong></td><td>legger<strong>ai</strong></td><td>dormir<strong>ai</strong></td></tr>
+        <tr><td class="pronoun">lui/lei</td><td>parler<strong>à</strong></td><td>legger<strong>à</strong></td><td>dormir<strong>à</strong></td></tr>
+        <tr><td class="pronoun">noi</td><td>parler<strong>emo</strong></td><td>legger<strong>emo</strong></td><td>dormir<strong>emo</strong></td></tr>
+        <tr><td class="pronoun">voi</td><td>parler<strong>ete</strong></td><td>legger<strong>ete</strong></td><td>dormir<strong>ete</strong></td></tr>
+        <tr><td class="pronoun">loro</td><td>parler<strong>anno</strong></td><td>legger<strong>anno</strong></td><td>dormir<strong>anno</strong></td></tr>
+      </table>
+    </div>
+    <div class="ib tip">
+      <strong>Futuro irregolari:</strong> essere→sarò · avere→avrò · andare→andrò · venire→verrò · fare→farò · potere→potrò · volere→vorrò · dovere→dovrò · sapere→saprò · stare→starò · dare→darò
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Futuro anteriore (futuro perfecto)</div>
+      <strong>avrò/sarò + pp.</strong> → acción futura anterior a otra futura.<br>
+      <em>Quando avrai finito, usciamo.</em> (Cuando hayas terminado, salimos.)
+    </div>
+    <div class="ib key">
+      <strong>Futuro di probabilità:</strong> El futuro también expresa suposición en el presente: <em>Avrà quarant'anni.</em> (Tendrá unos cuarenta años / Supongo que tiene cuarenta años.)
+    </div>
+  </section>
+
+  <!-- ══════════ CONDIZIONALE ══════════ -->
+  <section class="block" id="condizionale">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Condizionale Presente e Passato</h2>
+    </div>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE (parlare)</th><th>-ERE (leggere)</th><th>-IRE (dormire)</th></tr>
+        <tr><td class="pronoun">io</td><td>parler<strong>ei</strong></td><td>legger<strong>ei</strong></td><td>dormir<strong>ei</strong></td></tr>
+        <tr><td class="pronoun">tu</td><td>parler<strong>esti</strong></td><td>legger<strong>esti</strong></td><td>dormir<strong>esti</strong></td></tr>
+        <tr><td class="pronoun">lui/lei</td><td>parler<strong>ebbe</strong></td><td>legger<strong>ebbe</strong></td><td>dormir<strong>ebbe</strong></td></tr>
+        <tr><td class="pronoun">noi</td><td>parler<strong>emmo</strong></td><td>legger<strong>emmo</strong></td><td>dormir<strong>emmo</strong></td></tr>
+        <tr><td class="pronoun">voi</td><td>parler<strong>este</strong></td><td>legger<strong>este</strong></td><td>dormir<strong>este</strong></td></tr>
+        <tr><td class="pronoun">loro</td><td>parler<strong>ebbero</strong></td><td>legger<strong>ebbero</strong></td><td>dormir<strong>ebbero</strong></td></tr>
+      </table>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Condizionale passato: avrei/sarei + pp.</div>
+      Expresa lo que habría pasado: <em>Avrei studiato di più.</em> (Habría estudiado más.)
+    </div>
+    <div class="ib tip">Usos: peticiones corteses (<em>Vorrei un caffè.</em>), deseos (<em>Mi piacerebbe andare.</em>), hipótesis (ver periodo ipotetico).</div>
+  </section>
+
+  <!-- ══════════ CONGIUNTIVO ══════════ -->
+  <section class="block" id="congiuntivo">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Congiuntivo</h2>
+    </div>
+
+    <h3 class="sh">Congiuntivo presente</h3>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE (parlare)</th><th>-ERE (leggere)</th><th>-IRE (finire)</th></tr>
+        <tr><td class="pronoun">io / tu / lui</td><td>parli</td><td>legga</td><td>finisca</td></tr>
+        <tr><td class="pronoun">noi</td><td>parliamo</td><td>leggiamo</td><td>finiamo</td></tr>
+        <tr><td class="pronoun">voi</td><td>parliate</td><td>leggiate</td><td>finiate</td></tr>
+        <tr><td class="pronoun">loro</td><td>parlino</td><td>leggano</td><td>finiscano</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Congiuntivo imperfetto</h3>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE</th><th>-ERE</th><th>-IRE</th><th>essere</th></tr>
+        <tr><td class="pronoun">io</td><td>parlassi</td><td>leggessi</td><td>dormissi</td><td>fossi</td></tr>
+        <tr><td class="pronoun">tu</td><td>parlassi</td><td>leggessi</td><td>dormissi</td><td>fossi</td></tr>
+        <tr><td class="pronoun">lui/lei</td><td>parlasse</td><td>leggesse</td><td>dormisse</td><td>fosse</td></tr>
+        <tr><td class="pronoun">noi</td><td>parlassimo</td><td>leggessimo</td><td>dormissimo</td><td>fossimo</td></tr>
+        <tr><td class="pronoun">voi</td><td>parlaste</td><td>leggeste</td><td>dormiste</td><td>foste</td></tr>
+        <tr><td class="pronoun">loro</td><td>parlassero</td><td>leggessero</td><td>dormissero</td><td>fossero</td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Cuándo usar el congiuntivo</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Contexto</th><th>Ejemplo</th></tr>
+        <tr><td>Verbos de opinión/pensamiento: <em>pensare, credere, ritenere</em></td><td><em>Penso che tu abbia ragione.</em></td></tr>
+        <tr><td>Verbos de emoción: <em>essere felice/triste, avere paura</em></td><td><em>Sono felice che tu sia qui.</em></td></tr>
+        <tr><td>Verbos de voluntad/deseo: <em>volere, sperare, desiderare</em></td><td><em>Voglio che tu studi.</em></td></tr>
+        <tr><td>Verbos de duda: <em>dubitare, non essere sicuro</em></td><td><em>Dubito che venga.</em></td></tr>
+        <tr><td>Conjunciones: <em>benché, sebbene, affinché, prima che, a meno che</em></td><td><em>Benché sia tardi, resto.</em></td></tr>
+        <tr><td>Indefinido como antecedente: <em>cercare qualcuno che...</em></td><td><em>Cerco un appartamento che sia grande.</em></td></tr>
+        <tr><td>Frases superlativas relativas</td><td><em>È il più bello che io abbia visto.</em></td></tr>
+      </table>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Concordanza dei tempi</div>
+      Proposición principal en <strong>presente/futuro</strong> → congiuntivo <strong>presente</strong> (simultaneidad) o <strong>passato</strong> (anterioridad).<br>
+      Proposición principal en <strong>pasado/condizionale</strong> → congiuntivo <strong>imperfetto</strong> (simultaneidad) o <strong>trapassato</strong> (anterioridad).
+    </div>
+  </section>
+
+  <!-- ══════════ IMPERATIVO ══════════ -->
+  <section class="block" id="imperativo">
+    <div class="block-header">
+      <span class="block-label">Verbi</span>
+      <h2>Imperativo</h2>
+    </div>
+    <div class="t-wrap">
+      <table class="conj-table">
+        <tr><th class="pronoun">Persona</th><th>-ARE (parlare)</th><th>-ERE (leggere)</th><th>-IRE (dormire)</th><th>-IRE -isc- (finire)</th></tr>
+        <tr><td class="pronoun">tu</td><td>parla!</td><td>leggi!</td><td>dormi!</td><td>finisci!</td></tr>
+        <tr><td class="pronoun">lui/lei (formale)</td><td>parli!</td><td>legga!</td><td>dorma!</td><td>finisca!</td></tr>
+        <tr><td class="pronoun">noi</td><td>parliamo!</td><td>leggiamo!</td><td>dormiamo!</td><td>finiamo!</td></tr>
+        <tr><td class="pronoun">voi</td><td>parlate!</td><td>leggete!</td><td>dormite!</td><td>finite!</td></tr>
+      </table>
+    </div>
+    <div class="ib warn">
+      <strong>Imperativo negativo (tu):</strong> NON + infinitivo: <em>Non parlare! Non correre!</em><br>
+      <strong>Con pronomi:</strong> En imperativo afirmativo (tu/noi/voi), los pronombres van unidos al verbo: <em>Dimmi! Fallo! Andiamoci!</em> Con las formas monosílabas (di', fa', va', da', sta') se dobla la consonante inicial del pronombre: <em>Dimmi, fallo, vacci, dacci, stammi.</em>
+    </div>
+  </section>
+
+  <!-- ══════════ PASSIVO ══════════ -->
+  <section class="block" id="passivo">
+    <div class="block-header">
+      <span class="block-label">Strutture</span>
+      <h2>Forma Passiva</h2>
+    </div>
+    <div class="rule-box">
+      <div class="rule-title">Formazione: essere (en el tiempo correspondiente) + participio passato</div>
+      Il romanzo <strong>è scritto</strong> da uno scrittore famoso. (presente)<br>
+      Il romanzo <strong>è stato scritto</strong> da uno scrittore famoso. (passato prossimo)<br>
+      Il romanzo <strong>era scritto</strong>… (imperfetto) · <strong>sarà scritto</strong>… (futuro) · <strong>sarebbe scritto</strong>… (condizionale)
+    </div>
+    <div class="ib tip">
+      <strong>Alternativa con "venire":</strong> Solo en tiempos simples: <em>Il romanzo viene scritto / veniva scritto.</em><br>
+      <strong>Alternativa con "si passivante":</strong> <em>Si vendono case. Si parla italiano.</em>
+    </div>
+  </section>
+
+  <!-- ══════════ DISCORSO INDIRETTO ══════════ -->
+  <section class="block" id="discorso-indiretto">
+    <div class="block-header">
+      <span class="block-label">Strutture</span>
+      <h2>Discorso Indiretto</h2>
+    </div>
+    <p>Al passar del discorso diretto a quello indiretto con verbo introduttore al passato, i tempi cambiano:</p>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Discorso diretto</th><th>Discorso indiretto (verbo intro. al passato)</th></tr>
+        <tr><td>Presente → <em>"studio"</em></td><td>Imperfetto → <em>studiava</em></td></tr>
+        <tr><td>Passato prossimo → <em>"ho studiato"</em></td><td>Trapassato prossimo → <em>aveva studiato</em></td></tr>
+        <tr><td>Imperfetto → <em>"studiavo"</em></td><td>Imperfetto → <em>studiava</em> (sin cambio)</td></tr>
+        <tr><td>Futuro → <em>"studierò"</em></td><td>Condizionale presente → <em>avrebbe studiato</em></td></tr>
+        <tr><td>Imperativo → <em>"studia!"</em></td><td>di + infinitivo → <em>di studiare</em></td></tr>
+        <tr><td>Congiuntivo presente → <em>"studi"</em></td><td>Congiuntivo imperfetto → <em>studiasse</em></td></tr>
+      </table>
+    </div>
+    <div class="ib key">
+      <strong>Cambios de expresiones temporales:</strong> oggi→quel giorno · ieri→il giorno prima · domani→il giorno dopo · questo→quello · qui/qua→lì/là · ora→allora
+    </div>
+  </section>
+
+  <!-- ══════════ PERIODO IPOTETICO ══════════ -->
+  <section class="block" id="periodo-ipotetico">
+    <div class="block-header">
+      <span class="block-label">Strutture</span>
+      <h2>Periodo Ipotetico</h2>
+    </div>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Tipo</th><th>Ipotesi (se + ...)</th><th>Apodosi (risultato)</th><th>Uso</th></tr>
+        <tr>
+          <td><strong>Tipo 1 — Reale</strong></td>
+          <td>se + indicativo presente/futuro</td>
+          <td>indicativo presente/futuro / imperativo</td>
+          <td>Condición posible o probable</td>
+        </tr>
+        <tr>
+          <td><strong>Tipo 2 — Possibile/Ipotetica</strong></td>
+          <td>se + congiuntivo imperfetto</td>
+          <td>condizionale presente</td>
+          <td>Hipótesis poco probable en el presente/futuro</td>
+        </tr>
+        <tr>
+          <td><strong>Tipo 3 — Irreale</strong></td>
+          <td>se + congiuntivo trapassato</td>
+          <td>condizionale passato</td>
+          <td>Hipótesis imposible en el pasado</td>
+        </tr>
+      </table>
+    </div>
+    <div class="lang-example">
+      <span class="it">Se studio, passo l'esame. (tipo 1 — reale)</span>
+      <span class="es">Si estudio, apruebo el examen.</span>
+    </div>
+    <div class="lang-example">
+      <span class="it">Se studiassi di più, passerei l'esame. (tipo 2 — ipotetica)</span>
+      <span class="es">Si estudiara más, aprobaría el examen.</span>
+    </div>
+    <div class="lang-example">
+      <span class="it">Se avessi studiato, avrei passato l'esame. (tipo 3 — irreale nel passato)</span>
+      <span class="es">Si hubiera estudiado, habría aprobado el examen.</span>
+    </div>
+  </section>
+
+  <!-- ══════════ CONNETTIVI ══════════ -->
+  <section class="block" id="connettivi">
+    <div class="block-header">
+      <span class="block-label">Strutture</span>
+      <h2>Connettivi e Locuzioni</h2>
+    </div>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Función</th><th>Connettivi</th></tr>
+        <tr><td><strong>Aggiunta</strong></td><td>inoltre, anche, pure, in aggiunta, nonché, oltretutto</td></tr>
+        <tr><td><strong>Contrasto</strong></td><td>però, ma, tuttavia, eppure, nonostante, sebbene, benché (+ cong.), invece, al contrario</td></tr>
+        <tr><td><strong>Causa</strong></td><td>perché, poiché, siccome, dato che, visto che, in quanto</td></tr>
+        <tr><td><strong>Consecuencia</strong></td><td>quindi, perciò, dunque, di conseguenza, pertanto</td></tr>
+        <tr><td><strong>Finalidad</strong></td><td>per (+ inf.), affinché / perché (+ cong.)</td></tr>
+        <tr><td><strong>Tiempo</strong></td><td>quando, mentre, dopo che, prima che (+ cong.), appena, finché</td></tr>
+        <tr><td><strong>Condición</strong></td><td>se, a condizione che, purché, a meno che non (+ cong.)</td></tr>
+        <tr><td><strong>Concesión</strong></td><td>anche se, nonostante (+ cong.), benché (+ cong.), sebbene (+ cong.)</td></tr>
+        <tr><td><strong>Ejemplificación</strong></td><td>ad esempio, per esempio, come, tra cui</td></tr>
+        <tr><td><strong>Resumen/conclusión</strong></td><td>in conclusione, in sintesi, insomma, in definitiva, tutto sommato</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ══════════ PREPOSIZIONI ══════════ -->
+  <section class="block" id="preposizioni">
+    <div class="block-header">
+      <span class="block-label">Strutture</span>
+      <h2>Preposizioni</h2>
+    </div>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Preposición</th><th>Usos principales</th><th>Ejemplos</th></tr>
+        <tr><td><strong>di</strong></td><td>Posesión, origen, materia, argumento, partitivo</td><td><em>il libro di Marco, vengo di Roma, parlare di sport</em></td></tr>
+        <tr><td><strong>a</strong></td><td>Lugar (estancia), dirección (ciudades), tiempo, CI</td><td><em>vivo a Roma, vado a Milano, a mezzogiorno, dico a te</em></td></tr>
+        <tr><td><strong>da</strong></td><td>Origen, agente en passivo, duración (desde), función</td><td><em>vengo da Napoli, scritto da, studio da tre anni, una tazza da tè</em></td></tr>
+        <tr><td><strong>in</strong></td><td>Lugar (dentro), países/regioni, medio de transporte, tiempo</td><td><em>in Italia, in ufficio, in treno, in estate</em></td></tr>
+        <tr><td><strong>con</strong></td><td>Compañía, instrumento, modo</td><td><em>vengo con te, scrivo con la penna, con calma</em></td></tr>
+        <tr><td><strong>su</strong></td><td>Encima de, sobre (argumento), aproximación</td><td><em>il libro è sul tavolo, un articolo su…, sulla cinquantina</em></td></tr>
+        <tr><td><strong>per</strong></td><td>Finalidad, duración (futuro), destino, causa</td><td><em>studio per l'esame, parto per Roma, per questo</em></td></tr>
+        <tr><td><strong>tra/fra</strong></td><td>Entre (lugar y tiempo)</td><td><em>tra me e te, arrivo tra un'ora</em></td></tr>
+      </table>
+    </div>
+    <div class="ib tip">
+      <strong>Preposizioni articolate:</strong> di+il=del · di+lo=dello · di+la=della · di+l'=dell' · di+i=dei · di+gli=degli · di+le=delle<br>
+      Lo mismo con a, da, in, su, con (solo col=con+il es muy habitual).
+    </div>
+  </section>
+
+  <!-- ══════════ PRODUZIONE SCRITTA ══════════ -->
+  <section class="block" id="produzione">
+    <div class="block-header">
+      <span class="block-label">Scrittura</span>
+      <h2>Produzione Scritta</h2>
+    </div>
+
+    <h3 class="sh">Struttura del testo argomentativo</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Parte</th><th>Contenuto</th><th>Connettivi útiles</th></tr>
+        <tr><td><strong>Introduzione</strong></td><td>Presentare il tema, dare una definizione o porre una domanda</td><td><em>Oggi si discute molto di… / Il tema di… è sempre più attuale…</em></td></tr>
+        <tr><td><strong>Tesi (posición propia)</strong></td><td>Esporre la propria opinione chiaramente</td><td><em>A mio avviso… / Ritengo che… / Sono convinto/a che…</em></td></tr>
+        <tr><td><strong>Argomentazioni</strong></td><td>Dar argumentos, ejemplos, datos</td><td><em>In primo luogo… / Inoltre… / Ad esempio… / È dimostrato che…</em></td></tr>
+        <tr><td><strong>Antitesi e confutazione</strong></td><td>Mencionar el argumento contrario y refutarlo</td><td><em>C'è chi sostiene che… tuttavia… / Sebbene… in realtà…</em></td></tr>
+        <tr><td><strong>Conclusione</strong></td><td>Sintetizar y reforzar la tesis</td><td><em>In conclusione… / Per concludere… / In definitiva…</em></td></tr>
+      </table>
+    </div>
+
+    <h3 class="sh">Lettera formale</h3>
+    <div class="rule-box">
+      <div class="rule-title">Struttura</div>
+      <strong>Intestazione:</strong> [Luogo], [data] / [Mittente] / [Destinatario]<br>
+      <strong>Oggetto:</strong> Oggetto: Richiesta di informazioni / Reclamo / ...<br>
+      <strong>Apertura:</strong> Egregio/Gentile [Sig./Dott./Prof.] + cognome, / Spett.le [nome ente],<br>
+      <strong>Corpo:</strong> Con la presente mi permetto di... / Le scrivo in merito a... / Sono a contattarLa per...<br>
+      <strong>Chiusura:</strong> In attesa di una Sua cortese risposta, / RingraziandoLa anticipatamente,<br>
+      <strong>Firma:</strong> Distinti saluti, / Cordialmente, + [Firma]
+    </div>
+
+    <h3 class="sh">Frasi utili per l'esame</h3>
+    <div class="t-wrap">
+      <table>
+        <tr><th>Función</th><th>Espressioni</th></tr>
+        <tr><td>Opinar</td><td><em>Secondo me / A mio parere / Ritengo che / Mi sembra che / Sono convinto/a che</em></td></tr>
+        <tr><td>Introducir un argumento</td><td><em>In primo luogo / Innanzitutto / Prima di tutto / Per cominciare</em></td></tr>
+        <tr><td>Añadir</td><td><em>In secondo luogo / Inoltre / Anche / Allo stesso modo / Ugualmente</em></td></tr>
+        <tr><td>Contrastar</td><td><em>Tuttavia / Però / D'altra parte / Al contrario / Nonostante ciò</em></td></tr>
+        <tr><td>Ejemplificar</td><td><em>Ad esempio / Per esempio / Come / In particolare / Tra cui</em></td></tr>
+        <tr><td>Concluir</td><td><em>In conclusione / In sintesi / Per concludere / In definitiva / Tutto considerato</em></td></tr>
+      </table>
+    </div>
+  </section>
+
+  <div class="page-footer">
+    ITALIANO · UNED 2026 · <a href="index.html" style="color:var(--muted)">← Volver al inicio</a>
+  </div>
+
+</main>
+</div>
+
+<script>
+const sections = document.querySelectorAll('section[id]');
+const links = document.querySelectorAll('.sb-link');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.sb-link[href="#${e.target.id}"]`);
+      if (a) a.classList.add('active');
+    }
+  });
+}, { rootMargin: `-${56+16}px 0px -60% 0px`, threshold: 0 });
+sections.forEach(s => obs.observe(s));
+</script>
+</body>
+</html>

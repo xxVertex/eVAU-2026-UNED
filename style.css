@@ -15,6 +15,8 @@
   --fisica:   #f5a623;
   --mat2:     #60a5fa;
   --matcc:    #4ade80;
+  --ita:      #f28b6e;
+  --eng:      #c084fc;
   --accent:   var(--fisica); /* default, se sobreescribe */
 
   --topbar-h: 56px;
@@ -29,6 +31,8 @@
 body[data-subject="fisica"]  { --accent: var(--fisica); }
 body[data-subject="mat2"]    { --accent: var(--mat2);   }
 body[data-subject="matcc"]   { --accent: var(--matcc);  }
+body[data-subject="ita"]     { --accent: var(--ita);    }
+body[data-subject="eng"]     { --accent: var(--eng);    }
 
 /* ═══════════════════════════════════════════════════════
    RESET & BASE
@@ -79,9 +83,12 @@ a:hover { text-decoration: underline; }
 .topbar-nav {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 2px;
   flex: 1;
+  overflow-x: auto;
+  scrollbar-width: none;
 }
+.topbar-nav::-webkit-scrollbar { display: none; }
 
 .topbar-nav a {
   font-family: var(--font-mono);
@@ -98,6 +105,8 @@ a:hover { text-decoration: underline; }
 .topbar-nav a.fisica:hover, .topbar-nav a.fisica.active { color: var(--fisica); background: rgba(245,166,35,0.1); }
 .topbar-nav a.mat2:hover, .topbar-nav a.mat2.active     { color: var(--mat2);   background: rgba(96,165,250,0.1); }
 .topbar-nav a.matcc:hover, .topbar-nav a.matcc.active   { color: var(--matcc);  background: rgba(74,222,128,0.1); }
+.topbar-nav a.ita:hover, .topbar-nav a.ita.active       { color: var(--ita);    background: rgba(242,139,110,0.1); }
+.topbar-nav a.eng:hover, .topbar-nav a.eng.active       { color: var(--eng);    background: rgba(192,132,252,0.1); }
 
 .topbar-tag {
   font-family: var(--font-mono);
